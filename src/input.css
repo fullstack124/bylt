@@ -5,3 +5,14 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+/* Hide the scrollbar for elements with specific classes */
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar {
+  width: 0.4rem; /* Adjust the width as needed */
+  background-color: transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb,
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
