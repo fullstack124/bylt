@@ -145,27 +145,37 @@ body {
     @apply text-[#000] text-[17px] font-medium not-italic leading-[38px]
 }
 
-.input_border_user{
+.input_border_user {
     @apply py-2 px-3 border rounded-xl
 }
 
-.user_profile{
-    @apply text-[#111827] ml-2 rounded-lg  text-[14px] not-italic font-medium leading-[22px]
+.user_profile {
+    @apply text-[#111827] ml-2 rounded-lg text-[14px] not-italic font-medium leading-[22px]
 }
 
-.user_profile_down{
-    @apply text-[#687588] text-[12px] font-normal not-italic leading-[19px] text-left 
+.user_profile_down {
+    @apply text-[#687588] text-[12px] font-normal not-italic leading-[19px] text-left
 }
-.user_profile_down_bold{
+
+.user_profile_down_bold {
     @apply text-[#111827] text-[14px] font-semibold not-italic leading-[22px] text-left
 }
-.footer_link{
+
+.footer_link {
     @apply text-[#000] text-[15px] not-italic font-bold leading-[18px]
 }
-.footer_copyright{
+
+.footer_copyright {
     @apply text-[#747A80] text-[15px] not-italic font-medium leading-[18px]
 }
 
-.form_input{
-    @apply py-1  w-full outline-none 
+.form_input {
+    @apply py-1 w-full outline-none
+}
+
+.file_border {
+    border-radius: 11.599px;
+    border: 1.16px dashed #000;
+    opacity: 0.5;
+    background: #F5F7FA;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transfer</title>
+    <title>Dashboard</title>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -106,13 +106,13 @@
         <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
                 <div class="container mx-auto px-10">
-                    <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
+                    <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4">
                         <div>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
                             <div class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] flex items-center">
-                                <img src="../../images/search.svg" alt="">
+                                <img src="../images/search.svg" alt="">
                                 <input type="text" name="" id="" placeholder="Search"
                                     class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
                             </div>
@@ -312,27 +312,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="py-5 mt-[28px] pl-[60px]" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
-                <div class="flex items-center space-x-5">
-                    <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
-                    <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
-                    <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
-                    <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights
-                        reserved Bylt Finance</h1>
+                <div class="py-5 mt-[28px] pl-[60px]" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
+                    <div class="flex items-center space-x-5">
+                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
+                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
+                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
+                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights reserved Bylt Finance</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <script>
-
-        const show_dropdown = document.getElementById('show_dropdown');
-        const dropdown = document.getElementById('dropdown');
-        show_dropdown.addEventListener('click', function () {
-            console.log(this.data('id'));
-        })
-    </script>
 </body>
 
 </html>
