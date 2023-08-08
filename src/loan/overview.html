@@ -21,22 +21,22 @@
             <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
                 <ul class="ml-4">
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="../dashboard.html" class="flex items-center group">
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[#FB6039] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-[white] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
+                        <a href="dashboard.html" class="flex items-center group">
                             <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
+                                class="ml-4 text-[#FB6039] text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
@@ -107,12 +107,13 @@
             <div>
                 <div class="container mx-auto md:px-10 px-4">
                     <nav class="flex  items-center xl:flex-row flex-col justify-between py-6 gap-4">
-                        <div class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
+                        <div
+                            class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
                             <a href="overview.html"
                                 class="rounded-[6px] bg-[#000032] py-2 px-6 text-white text-[15px] not-italic font-medium leading-[18px]">
                                 Overview
                             </a>
-                            <a href=""
+                            <a href="comment.html"
                                 class="rounded-[6px]  py-2  text-black text-[15px] not-italic font-semibold leading-[18px]">
                                 Comment
                             </a>
@@ -235,7 +236,8 @@
                                                 <td class="py-4 sm:px-6"><span
                                                         class="rounded-[6px]  py-2  text-black text-[16px] not-italic font-normal text-left leading-[18px]">Account
                                                         Verified</span></td>
-                                                <td class="text-right sm:px-10 flex items-center justify-end my-3"><button
+                                                <td class="text-right sm:px-10 flex items-center justify-end my-3">
+                                                    <button
                                                         class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[17px] not-italic font-bold leading-[19px] ">Verified</button>
                                                 </td>
                                             </tr>
@@ -243,7 +245,8 @@
                                                 <td class="py-4 sm:px-6"><span
                                                         class="rounded-[6px]  py-2  text-black text-[16px] not-italic font-normal text-left leading-[18px]">Account
                                                         Status</span></td>
-                                                <td class="text-right sm:px-10 flex items-center justify-end my-3"><button
+                                                <td class="text-right sm:px-10 flex items-center justify-end my-3">
+                                                    <button
                                                         class="text-[#1AAF5D] py-2 rounded-lg px-12 bg-[#cfe7ca] flex items-center justify-center text-[17px] not-italic font-bold leading-[19px] ">Active</button>
                                                 </td>
                                             </tr>
@@ -254,7 +257,7 @@
                                     <div class="rounded-border xl:mx-[37px] xl:my-0 my-4 px-5 ">
                                         <div class="flex items-center justify-between my-2 ">
                                             <h1 class=""><span>Loan ID</span> <span
-                                                    class="sub-heading ml-4">BYLHY0986</span></h1>
+                                                    class="sub-heading md:ml-4">BYLHY0986</span></h1>
                                             <button
                                                 class="bg-gray-100/50 px-6 py-2 rounded-lg text-black font-medium">Edit
                                                 Loan</button>
@@ -263,10 +266,10 @@
                                         <div
                                             class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
                                             <table
-                                                class="border-collapse table-auto w-full whitespace-no-wrap bg-white  relative">
+                                                class="border-collapse table-auto md:w-full w-[543px] whitespace-no-wrap bg-white  relative">
                                                 <tbody>
                                                     <tr class="">
-                                                        <td class=" px-1 py-1">
+                                                        <td class="py-1">
                                                             <p
                                                                 class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
                                                                 Loan Amount</p>
@@ -274,7 +277,7 @@
                                                                 class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
                                                                 $30,000</h1>
                                                         </td>
-                                                        <td class=" px-1 py-1">
+                                                        <td class="py-1">
                                                             <p
                                                                 class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
                                                                 Loan Term</p>
@@ -282,7 +285,7 @@
                                                                 class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
                                                                 5 Months</h1>
                                                         </td>
-                                                        <td class=" px-1 py-1">
+                                                        <td class="py-1">
                                                             <p
                                                                 class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
                                                                 Interest Rate</p>
@@ -290,15 +293,32 @@
                                                                 class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
                                                                 7% APR</h1>
                                                         </td>
-                                                        <td class=" px-1 py-1">
-                                                            <button
-                                                                class="bg-[#e8deff] w-full text-[17px] py-1 px-5 rounded-lg text-[#5F38CA] font-bold">Pre-Approved</button>
+                                                        <td class="py-1 relative">
+                                                            <button id="loan_dropdown"
+                                                                class=" bg-[#e8deff] w-full text-[15px] py-1 px-1 rounded-lg text-[#5F38CA] font-bold">Pre-Approved</button>
+                                                            <div class="absolute top-12 right-0  rounded-lg shadow-md hidden border" id="show_loan_dropdown">
+                                                                <div class="bg-white px-5  py-3">
+                                                                    <button class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#1AAF5D] not-italic"
+                                                                        style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #1AAF5D;">
+                                                                        Approved
+                                                                    </button>
+                                                                    <button class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#F00] not-italic "
+                                                                        style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #F00;">
+                                                                        Decline
+                                                                    </button>
+                                                                    <button class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#2D3748] not-italic "
+                                                                        style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #2D3748;">
+                                                                        Cancel
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
                                             </table>
-                                            <table class="table w-full">
+                                            <table class="table md:w-full w-[543px] table-auto">
                                                 <tbody>
                                                     <tr class="border-b">
                                                         <td
@@ -339,8 +359,7 @@
                                         <hr>
                                         <div
                                             class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
-                                            <table
-                                                class=" table-auto w-full whitespace-no-wrap bg-white  relative">
+                                            <table class=" table-auto w-full whitespace-no-wrap bg-white  relative">
                                                 <tbody>
                                                     <tr class="">
                                                         <td class=" px-3 py-2">
@@ -356,7 +375,8 @@
                                                         <td class=" px-3 py-2">
                                                             <div class="flex items-center space-x-3 ">
                                                                 <div class="rounded-md py-1 px-1 border">
-                                                                    <img src="../../images/download.svg" class="sm:width-[50px]" alt="">
+                                                                    <img src="../../images/download.svg"
+                                                                        class="sm:width-[50px]" alt="">
                                                                 </div>
                                                                 <img src="../../images/eye.svg" alt="">
                                                             </div>
@@ -376,7 +396,7 @@
                                                         <td class=" px-3 py-2">
                                                             <div class="flex items-center space-x-3 ">
                                                                 <div class="rounded-md py-1 px-1 border">
-                                                                    <img src="../../images/download.svg"  alt="">
+                                                                    <img src="../../images/download.svg" alt="">
                                                                 </div>
                                                                 <img src="../../images/eye.svg" alt="">
                                                             </div>
@@ -452,6 +472,20 @@
         }
 
         document.addEventListener('click', handleClickOutside);
+
+
+        const loan_dropdown=document.getElementById('loan_dropdown');
+        const show_loan_dropdown=document.getElementById('show_loan_dropdown');
+
+        loan_dropdown.addEventListener('click',function(){
+            if(show_loan_dropdown.classList.contains('hidden')){
+                show_loan_dropdown.classList.add('block')
+                show_loan_dropdown.classList.remove('hidden')
+            }else{
+                show_loan_dropdown.classList.remove('block')
+                show_loan_dropdown.classList.add('hidden')
+            }
+        })
     </script>
 </body>
 

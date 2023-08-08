@@ -14,24 +14,28 @@
 
 <body>
     <main class="flex">
-        <div class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="#FFF" class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             <div class="flex justify-center">
-                <img src="../images/logo.svg" alt="">
+                <img src="../../images/logo.svg" alt="">
             </div>
             <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                    <li class="px-5">
+                        <a href="dashboard.html" class="flex items-center group">
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[#FB6039] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="./loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
@@ -40,8 +44,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="../transfer.html" class="flex items-center group">
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
@@ -51,7 +55,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -60,13 +64,13 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="./customer/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Customer</span>
+                                class="ml-4 text-[#FB6039] text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Customer</span>
                         </a>
                     </li>
                 </ul>
@@ -82,7 +86,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -92,7 +96,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -103,7 +107,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full md:ml-[250px] ml-0">
+        <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
                 <div class="container mx-auto px-10">
                     <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
@@ -117,7 +121,7 @@
                                     class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
                             </div>
                             <div>
-                                <img src="../images/admin-icon.svg" class="rounded-full w-12" alt="">
+                                <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
                             </div>
                         </div>
                     </nav>
@@ -130,28 +134,28 @@
                         </div>
                     </div>
                     <div class="mt-[24px]">
-                        <div class="grid grid-cols-5 gap-4">
-                            <div class="col-span-2">
+                        <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
+                            <div class="sm:col-span-2">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center">
                                     <input type="text" name="" id="" placeholder="Search customers"
                                         class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[16px] font-normal">
                                     <img src="../../images/search.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="sm:col-span-1">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All Location</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="sm:col-span-1">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Account Verified
                                     </h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="sm:col-span-1">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Loan History</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
@@ -159,14 +163,14 @@
                             </div>
                         </div>
                         <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
-                            <table class="border-collapse table-auto w-full whitespace-no-wrap bg-white  relative">
-                                <thead class="py-2 px-3    bg-[#F5F7FA]">
+                            <table class="table  lg:w-full w-[1000px] bg-white relative">
+                                <thead class="py-2 px-3 bg-[#F5F7FA]">
                                     <tr class="text-center">
-                                        <th class="py-2 px-3 ">
+                                        <th class="py-2 px-3">
                                             <div class="flex items-center justify-between ">
                                                 <div class="flex items-center">
                                                     <label
-                                                        class="text-indigo-500  justify-between items-center hover:bg-gray-300 px-2 py-2 rounded-lg cursor-pointer">
+                                                        class="text-indigo-500  justify-between it  ems-center hover:bg-gray-300 px-2 py-2 rounded-lg cursor-pointer">
                                                         <input type="checkbox"
                                                             class="form-checkbox focus:outline-none focus:shadow-outline">
                                                     </label>
@@ -277,7 +281,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -334,7 +340,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -391,7 +399,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -448,7 +458,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -505,7 +517,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -562,7 +576,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -619,7 +635,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -676,7 +694,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                                <img src="../../images/view-action.svg" alt="">
+                                               <a href="./overview.html">
+                                                 <img src="../../images/view-action.svg" alt="">
+                                               </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
