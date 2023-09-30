@@ -14,34 +14,38 @@
 
 <body>
     <main class="flex">
-        <div class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto" style='z-index:9999 !important;'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
+                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             <div class="flex justify-center">
                 <img src="../../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="../dashboard.html" class="flex items-center group">
+                    <li class="px-5">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[white] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-[#FB6039] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-[#FB6039] text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
+                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
@@ -50,8 +54,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -60,8 +64,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
                             </div>
@@ -71,8 +75,17 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
+                            <div
+                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/report.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
                             </div>
@@ -81,8 +94,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -92,7 +105,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -106,11 +119,16 @@
         <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
                 <div class="container mx-auto md:px-10 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
                     <nav class="flex  items-center xl:flex-row flex-col justify-between py-6 gap-4">
                         <div
                             class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
                             <a href="overview.html"
-                                class="rounded-[6px]  py-2 text-black  text-[15px] not-italic font-medium leading-[18px]">
+                                class="rounded-[6px]  py-2 text-black  text-[15px] not-italic font-semibold leading-[18px]">
                                 Overview
                             </a>
                             <a href="comment.html"
@@ -155,17 +173,17 @@
                                         class="text-black-primary font-inter text-[15px] xl:text-xl font-bold leading-6 xl:leading-7">
                                         BYLHY0986</h1>
                                 </div>
-                                <div class="lg:px-[170px] mt-6">
-                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                                <div class="lg:px-[170px] mt-4">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-3">
                                         <div>
                                             <label for=""
                                                 class="text-black-primary font-inter text-base font-normal leading-snug">Payment
                                                 Method</label>
-                                            <select name="" id=""
+                                            <select name="" id="value_dropdown"
                                                 class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
-                                                <option value="">Credit or Debit Card</option>
-                                                <option value="">Bank Direct Deposit - Transfer </option>
-                                                <option value="">Disbursement </option>
+                                                <option value="debit-card">Credit or Debit Card</option>
+                                                <option value="bank-transfer">Bank Direct Deposit - Transfer </option>
+                                                <option value="dis">Disbursement </option>
                                             </select>
                                         </div>
                                         <div>
@@ -174,16 +192,19 @@
                                                 Name</label>
                                             <input type="text"
                                                 class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                name="" id="">
-                                        </div>
-
+                                                name="" id="" value="Alyssa Smith">
+                                        </div> 
+                                    </div>
+                                    <div id="debit-card"
+                                        class="grid grid-cols-1 lg:grid-cols-2 gap-5 main_content_dropdown ">
+                                       
                                         <div>
                                             <label for=""
                                                 class="text-black-primary font-inter text-base font-normal leading-snug">Billing
                                                 Address</label>
                                             <input type="text"
                                                 class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                name="" id="">
+                                                name="" id="" value="Lot 107 Kings Ave, Sunny  Side">
                                         </div>
                                         <div>
                                             <label for=""
@@ -191,7 +212,7 @@
                                                 Number</label>
                                             <input type="text"
                                                 class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                name="" id="">
+                                                name="" id="" value="1234-5678-9101-1213">
                                         </div>
                                         <div>
                                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -200,28 +221,30 @@
                                                         class="text-black-primary font-inter text-base font-normal leading-snug">City</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="Linstead PO">
                                                 </div>
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Parish / State</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Parish
+                                                        / State</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="St.Catherine">
                                                 </div>
                                                 <div>
                                                     <label for=""
                                                         class="text-black-primary font-inter text-base font-normal leading-snug">Country</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="Jamaica">
                                                 </div>
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Postal / Zip code</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Postal
+                                                        / Zip code</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="0000">
                                                 </div>
                                             </div>
                                         </div>
@@ -229,42 +252,137 @@
                                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Expire Date mm/yy</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Expire
+                                                        Date mm/yy</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="10/28">
                                                 </div>
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">CVV Code</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">CVV
+                                                        Code</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="049">
                                                 </div>
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Amount Due</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Amount
+                                                        Due</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="$6500">
                                                 </div>
                                                 <div>
                                                     <label for=""
-                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Payment Amount</label>
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Payment
+                                                        Amount</label>
                                                     <input type="text"
                                                         class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
-                                                        name="" id="">
+                                                        name="" id="" value="$8000">
                                                 </div>
                                                 <div></div>
                                                 <img src="../../images/card.png" alt="">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex items-center flex-col justify-center mt-4">
+                                    <div id="bank-transfer"
+                                        class="hidden grid-cols-1 lg:grid-cols-2 gap-5 main_content_dropdown">
+                                        <div >
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Select
+                                                Financial Institution</label>
+                                            <select name="" id=""
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                                <option value="">Bank of Nova</option>
+                                                <option value="">Bank of Nova2 </option>
+                                                <option value="">Bank of Nova3</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Confirmation
+                                                Number</label>
+                                            <input type="text"
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                name="" id="" value="1234-5678-9101-1213">
+                                        </div>
+                                        <div>
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                                <div>
+                                                    <label for=""
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Amount
+                                                        Due</label>
+                                                    <input type="text"
+                                                        class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                        name="" id="" value="Linstead PO">
+                                                </div>
+                                                <div>
+                                                    <label for=""
+                                                        class="text-black-primary font-inter text-base font-normal leading-snug">Payment
+                                                        Amount</label>
+                                                    <input type="text"
+                                                        class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                        name="" id="" value="St.Catherine">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Payment
+                                                Date</label>
+                                            <input type="text"
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                name="" id="" value="July 30,2022">
+                                        </div>
+                                    </div>
+                                    <div id="dis" class="hidden grid-cols-1 lg:grid-cols-2 gap-5 main_content_dropdown">
+                                         
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Select
+                                                Financial Institution</label>
+                                            <select name="" id=""
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                                <option value="">Bank of Nova</option>
+                                                <option value="">Bank of Nova2 </option>
+                                                <option value="">Bank of Nova3</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Account
+                                                Number</label>
+                                            <input type="text"
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                name="" id="" value="1234-5678-9101-1213">
+                                        </div>
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Payment
+                                                Amount</label>
+                                            <input type="text"
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                name="" id="" value="St.Catherine">
+                                        </div>
+                                        <div>
+                                            <label for=""
+                                                class="text-black-primary font-inter text-base font-normal leading-snug">Payment
+                                                Date</label>
+                                            <input type="text"
+                                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md"
+                                                name="" id="" value="July 30,2022">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center flex-col justify-center mt-10">
+                                       <a href="transaction.html">
                                         <button
                                         class="rounded-[27px] bg-[#000032] py-3 px-20 text-white text-[18px] font-bold leading-[24px]"
                                         style="box-shadow: 0px 4px 16px 0px #B3C0E7;">Pay Now</button>
-                                        <button class="text-red-600 text-center block font-inter text-lg font-bold leading-6 xl:leading-7 mt-5">Cancel</button>
+                                       </a>
+                                        <button
+                                            class="text-red-600 text-center block font-inter text-lg font-bold leading-6 xl:leading-7 mt-5">Cancel</button>
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +396,8 @@
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
-                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights
+                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All
+                            rights
                             reserved Bylt Finance</h1>
                     </div>
                 </div>
@@ -286,40 +405,7 @@
         </div>
     </main>
 
-    <script>
-        const model = document.getElementById('model');
-        const show_model = document.getElementById('show_model');
-        show_model.addEventListener('click', function () {
-            if (model.classList.contains('hidden')) {
-                model.classList.add('flex');
-                model.classList.remove('hidden');
-            }
-        })
-        function handleClickOutside(event) {
-            if (event.target === model) {
-                if (model.classList.contains('flex')) {
-                    model.classList.remove('flex');
-                    model.classList.add('hidden');
-                }
-            }
-        }
-
-        document.addEventListener('click', handleClickOutside);
-
-
-        const loan_dropdown = document.getElementById('loan_dropdown');
-        const show_loan_dropdown = document.getElementById('show_loan_dropdown');
-
-        loan_dropdown.addEventListener('click', function () {
-            if (show_loan_dropdown.classList.contains('hidden')) {
-                show_loan_dropdown.classList.add('block')
-                show_loan_dropdown.classList.remove('hidden')
-            } else {
-                show_loan_dropdown.classList.remove('block')
-                show_loan_dropdown.classList.add('hidden')
-            }
-        })
-    </script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

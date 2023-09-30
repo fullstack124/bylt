@@ -14,34 +14,39 @@
 
 <body>
     <main class="flex">
-        <div class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar"
+            class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
+                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             <div class="flex justify-center">
                 <img src="../../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="../dashboard.html" class="flex items-center group">
+                    <li class="px-5">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[white] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-[#FB6039] text-[16px]  group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
+                                class="ml-4 text-[#FB6039] text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
@@ -50,8 +55,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -60,8 +65,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../customer/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
                             </div>
@@ -71,8 +76,17 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
+                            <div
+                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/report.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
                             </div>
@@ -81,8 +95,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -92,7 +106,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -108,6 +122,11 @@
                 <div class="container mx-auto px-10">
                     <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4">
                         <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        </svg>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
@@ -126,22 +145,31 @@
                 <div class="container mx-auto sm:px-10 px-4 pt-8 bg-white">
                     <div class="flex sm:items-center items-start sm:flex-row flex-col">
                         <div>
-                            <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">Customers</h1>
+                            <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">All Loans</h1>
                         </div>
                     </div>
                     <div class="mt-[24px] ">
                         <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
                             <div class="sm:col-span-2">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center">
-                                    <input type="text" name="" id="" placeholder="Search customers"
-                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[16px] font-normal">
+                                    <input type="text" name="" id="" placeholder="Search Loan ID or Customer Name"
+                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#000000CC] text-[16px] font-normal">
                                     <img src="../../images/search.svg" alt="">
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
+                                <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center relative">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All Status</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
+
+                                    <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md" style="z-index: 9999 !important;">
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-blue-100 px-5 rounded-md">Pending</a>
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Declined</a>
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-gray-100 px-5 rounded-md">Canceled</a>
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-purple-100 px-5 rounded-md">Pre-Approved</a>
+                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Transfer</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="sm:col-span-1">    
@@ -221,20 +249,20 @@
                                 </thead>
                                 <tbody>
                                     <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border " style="border-radius: 14px !important;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <div class="flex items-center ">
                                                     <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
                                                         <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
                                                             JF</h1>
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
                                                     <p
-                                                        class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -242,40 +270,40 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     Medical Expenses</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     BYLYU0321</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     $6500</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     Nov 23, 2022</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
                                             </div>
                                         </td>
@@ -294,20 +322,20 @@
                                         </td>
                                     </tr>
                                     <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border " style="border-radius: 14px;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <div class="flex items-center ">
                                                     <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
                                                         <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JF</h1>
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
+                                                            MB</h1>
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Meriam Bagloo</h1>
                                                     <p
-                                                        class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -315,46 +343,46 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Medical Expenses</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Major Purchase</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    BYLYU0321</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    BYLTU4310</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    $6500</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    $25,000</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     Nov 23, 2022</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                                <button class="text-blue-500 py-2 rounded-lg px-10 bg-blue-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Pending</button>
                                         </div>
                                         </td>
                                         <td class=" border-gray-300">
@@ -367,20 +395,20 @@
                                         </td>
                                     </tr>
                                     <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border " style="border-radius: 14px;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <div class="flex items-center ">
                                                     <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
                                                         <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JF</h1>
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
+                                                            AW</h1>
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Alyssa Wright</h1>
                                                     <p
-                                                        class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -388,46 +416,46 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Medical Expenses</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Vacation</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    BYLYU0321</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    BYLTHY7318</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    $6500</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    $23,000</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Nov 23, 2022</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Nov 25, 2022</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                                <button class="text-red-600 py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Declined</button>
                                         </div>
                                         </td>
                                         <td class=" border-gray-300">
@@ -440,20 +468,20 @@
                                         </td>
                                     </tr>
                                     <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border " style="border-radius: 14px;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <div class="flex items-center ">
                                                     <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
                                                         <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JF</h1>
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
+                                                            GG</h1>
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Gloria Gray</h1>
                                                     <p
-                                                        class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -461,46 +489,46 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
                                                     Medical Expenses</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    BYLYU0321</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    BYLAP0098</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    $6500</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    $10,000</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Nov 23, 2022</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Dec 15, 2022    </h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                                <button class="text-[#2D3748] py-2 rounded-lg px-10 bg-gray-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
                                         </div>
                                         </td>
                                         <td class=" border-gray-300">
@@ -513,20 +541,20 @@
                                         </td>
                                     </tr>
                                     <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border " style="border-radius: 14px;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <div class="flex items-center ">
                                                     <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
                                                         <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JF</h1>
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
+                                                            JM</h1>
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Janae Matali</h1>
                                                     <p
-                                                        class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -534,46 +562,119 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Medical Expenses</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Back to School</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    BYLYU0321</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    BYLFG5408</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    $6500</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    $30,000</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[16px] not-italic font-semibold leading-[19px] ">
-                                                    Nov 23, 2022</h1>
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Dec 22, 2022</h1>
                                                 <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                                <button class="text-[#5F38CA] py-2 rounded-lg px-10 bg-purple-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                        </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around">
+                                                <img src="../../images/edit1.svg" alt="">
+                                                <a href="overview.html">
+                                                    <img src="../../images/folder.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="h-3"></tr>
+                                    <tr class="border " style="border-radius: 14px;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center ">
+                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
+                                                        <h1
+                                                            class=" text-[#6B7280] text-[16px] not-italic font-semibold leading-[27px] text-center">
+                                                            AW</h1>
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Charmaine Lewis</h1>
+                                                    <p
+                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Vacation</h1>
+                                                <p
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                    Purpose</p>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    BYLKL8734</h1>
+                                                <p
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                    Loan ID</p>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    $50,000</h1>
+                                                <p
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                    Amount</p>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    Jan 15, 2023</h1>
+                                                <p
+                                                    class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                    Date</p>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-center ">
+                                                <button class="text-[#FB6039] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Transfer</button>
                                         </div>
                                         </td>
                                         <td class=" border-gray-300">
@@ -618,6 +719,8 @@
             </div>
         </div>
     </main>
+
+    <script  src="../../js/script.js"></script>
 </body>
 
 </html>

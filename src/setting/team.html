@@ -14,44 +14,49 @@
 
 <body class="">
     <main class="flex">
-        <div class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
+            style='z-index:9999 !important;'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
+                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             <div class="flex justify-center">
                 <img src="../../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="../dashboard.html" class="flex items-center group">
+                    <li class="px-5">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[white] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-[#FB6039] text-[16px]  group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
+                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
+                                class="ml-4 text-white  text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -60,7 +65,7 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../customer/dashboard.html" class="flex items-center group">
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
                             <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
@@ -71,8 +76,17 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
+                            <div
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/report.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
                             </div>
@@ -81,18 +95,18 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Settings</span>
+                                class="ml-4 text-[#FB6039] text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Settings</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -107,7 +121,12 @@
             <div>
                 <div class="container mx-auto px-10 bg-white">
                     <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4">
-                        <div>
+                        <div class="flex items-center space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
@@ -212,15 +231,87 @@
                                                     <td
                                                         class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
                                                         <img src="../../images/setting/Toggle.svg" alt="">
-                                                    </td>  
+                                                    </td>
                                                 </tr>
                                                 <tr class="border-b">
                                                     <td
                                                         class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                        Andrea Plummer</td>
+                                                        Jane Doe</td>
                                                     <td
                                                         class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                        andrea@byltpay.com</td>
+                                                        jane@byltpay.com</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Finance</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Underwriter</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        <img src="../../images/setting/Toggle.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-b">
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Regina Cameron</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        regina@byltpay.com</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Customer Experience</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Managers</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        <img src="../../images/setting/Toggle.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-b">
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        John Wick</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        john@byltpay.com</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Human Resources</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Managers</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        <img src="../../images/setting/Toggle.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-b">
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Mo Achunike</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        mo@byltpay.com</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Operations</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Admin</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        <img src="../../images/setting/Toggle.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-b">
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        Davia Smith</td>
+                                                    <td
+                                                        class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                        davia@byltpay.com</td>
                                                     <td
                                                         class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
                                                         Operations</td>
@@ -230,26 +321,8 @@
                                                     <td
                                                         class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
                                                         <img src="../../images/setting/Toggle.svg" alt="">
-                                                    </td>  
+                                                    </td>
                                                 </tr>
-                                                    <tr class="border-b">
-                                                        <td
-                                                            class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                            Andrea Plummer</td>
-                                                        <td
-                                                            class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                            andrea@byltpay.com</td>
-                                                        <td
-                                                            class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                            Operations</td>
-                                                        <td
-                                                            class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                            Underwriter</td>
-                                                        <td
-                                                            class=" py-4 px-5 border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                            <img src="../../images/setting/Toggle.svg" alt="">
-                                                        </td>  
-                                                    </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -270,6 +343,7 @@
             </div>
         </div>
     </main>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

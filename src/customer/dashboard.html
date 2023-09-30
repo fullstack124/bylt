@@ -14,18 +14,18 @@
 
 <body>
     <main class="flex">
-        <div id="sidebar" class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="#FFF" class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto" style='z-index:9999 !important;'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
+                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <div class="flex justify-center">
                 <img src="../../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
                     <li class="px-5">
-                        <a href="../dashboard.html" class="flex items-center group">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
@@ -34,8 +34,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
@@ -44,18 +44,18 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
+                                class="ml-4 text-white  text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./customer/dashboard.html" class="flex items-center group">
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
                             <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
@@ -75,8 +75,17 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
+                            <div
+                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/report.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
                             </div>
@@ -85,8 +94,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -96,7 +105,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -111,7 +120,12 @@
             <div>
                 <div class="container mx-auto px-10">
                     <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
-                        <div>
+                        <div class="flex items-center space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
@@ -174,7 +188,8 @@
                                                         <input type="checkbox"
                                                             class="form-checkbox focus:outline-none focus:shadow-outline">
                                                     </label>
-                                                    <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                         Customer name</h1>
                                                 </div>
                                                 <img src="../../images/up-down.svg" alt="">
@@ -182,49 +197,56 @@
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Job Title</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Phone Number</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Location</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Account Verified</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Loan History</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-2 px-3 ">
                                             <div class="flex items-center justify-around ">
-                                                <h1 class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
+                                                <h1
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-semibold leading-[19.2px]">
                                                     Action</h1>
                                             </div>
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="border-b">
+                                <tbody id="all_users">
+
+                                    <!-- <tr class="border-b">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
                                                 <label
@@ -262,28 +284,23 @@
                                                 Ann</span>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center  relative">
-                                                <div class="flex items-center justify-between" data-id="1" id="show_dropdown">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                            <div class="flex items-center justify-center ">
+                                                <div class="flex items-center justify-between">
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
-                                                <div class="absolute w-[80%] shadow py-3 px-3 bg-white top-9 left-3 hidden" data-val="1" id="dropdown">
-                                                    <h1 class="px-3 cursor-pointer mb-2 hover:text-[#1AAF5D] py-1 rounded-lg text-[#1AAF5D]  hover:bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">Verified</h1>
-                                                    <hr>
-                                                    <h1 class="px-3 cursor-pointer hover:text-[#FF0000] text-[#FF0000] py-1 rounded-lg mt-2 hover:bg-[#FFEDEC] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">Unverified</h1>
-                                                </div>
                                             </div>
-                                            
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -329,20 +346,21 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -388,20 +406,21 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -447,20 +466,21 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -506,20 +526,21 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -565,20 +586,21 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
@@ -624,91 +646,35 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
+                                                    <button
+                                                        class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
                                                     <img src="../../images/dropdown.svg" class="ml-3" alt="">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
+                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
+                                                <a href="./overview.html">
+                                                    <img src="../../images/view-action.svg" alt="">
+                                                </a>
                                                 <img src="../../images/edit-action.svg" alt="">
                                                 <img src="../../images/delete-action.svg" alt="">
                                             </div>
                                         </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-3 py-4 ">
-                                            <div class="flex items-center">
-                                                <label
-                                                    class="text-blue-500 inline-flex justify-between items-center hover:bg-gray-200 px-2 py-2 rounded-lg cursor-pointer">
-                                                    <input type="checkbox"
-                                                        class="form-checkbox  focus:outline-none focus:shadow-outline">
-                                                </label>
-                                                <div class="flex items-center ">
-                                                    <div class="ml-[12px]">
-                                                        <img src="../../images/avatar.svg" alt="">
-                                                    </div>
-                                                    <div class="ml-[12px]">
-                                                        <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Pristia Candra</h1>
-                                                        <p
-                                                            class="text-[#747A80] text-[10px] not-italic font-normal leading-[21px] ">
-                                                            pc@test.com</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <span
-                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">UI
-                                                UX Designer</span>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <span
-                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">123-456-7890</span>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <span
-                                                class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">St.
-                                                Ann</span>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <div class="flex items-center justify-between">
-                                                    <button class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px]">VERIFIED</button>
-                                                    <img src="../../images/dropdown.svg" class="ml-3" alt="">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <span
-                                            class="text-[#000] flex items-center justify-center text-[14px] not-italic font-semibold leading-[19px] ">5</span>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center space-x-3">
-                                               <a href="./overview.html">
-                                                 <img src="../../images/view-action.svg" alt="">
-                                               </a>
-                                                <img src="../../images/edit-action.svg" alt="">
-                                                <img src="../../images/delete-action.svg" alt="">
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-[22px]">
                             <div class="flex item-center">
-                                <h1 class="text-[#000] text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">Per page</h1>
-                                <div class="flex items-center rounded-[4px]  bg-[#FFF] py-2 px-4" style="box-shadow: 0px 4px 8px 0px rgba(179, 192, 231, 0.32);">
+                                <h1 class="text-[#000] text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
+                                    Per page</h1>
+                                <div class="flex items-center rounded-[4px]  bg-[#FFF] py-2 px-4"
+                                    style="box-shadow: 0px 4px 8px 0px rgba(179, 192, 231, 0.32);">
                                     <span class="">40</span>
                                     <img src="../../images/dropdown.svg" alt="">
                                 </div>
@@ -732,15 +698,173 @@
                 </div>
             </div>
         </div>
-    </main> 
+    </main>
 
-    <script> 
+    <script src="../../js/script.js"></script>
+    <script>
+        const lists = [
+            {
+                'id': 1,
+                'name': 'Pristia Candra',
+                'email': 'pc@test.com',
+                'job_title': 'UI UX Designer',
+                'phone_number': '123-456-7890',
+                'location': 'St. Ann',
+                'status': 1,
+                'loan_history': 5,
+            },
+            {
+                'id': 2,
+                'name': 'Hanna Baptista',
+                'email': 'hannap@test.com',
+                'job_title': 'Technical Support',
+                'phone_number': '123-456-7890',
+                'location': 'St.Catherine',
+                'status': 0,
+                'loan_history': 0,
+            },
+            {
+                'id': 3,
+                'name': 'Miracle Geidt',
+                'email': 'mgeidth@test.com',
+                'job_title': 'Sales Representative',
+                'phone_number': '123-456-7890',
+                'location': 'St.James',
+                'status': 0,
+                'loan_history': 0,
+            },
+            {
+                'id': 4,
+                'name': 'Rayna Torff',
+                'email': 'rtorff@test.com',
+                'job_title': 'Sales Engineer',
+                'phone_number': '123-456-7890',
+                'location': 'St. Catherine',
+                'status': 1,
+                'loan_history': 1,
+            },
+            {
+                'id': 5,
+                'name': 'glipshutz@test.com',
+                'email': 'Giana Lipshutz',
+                'job_title': 'Client Success Associate',
+                'phone_number': '123-456-7890',
+                'location': 'Kingston',
+                'status': 0,
+                'loan_history': 0,
+            },
+            {
+                'id': 6,
+                'name': 'James George',
+                'email': 'james@test.com',
+                'job_title': 'Onboarding Specialist',
+                'phone_number': '123-456-7890',
+                'location': 'St. Thomas',
+                'status': 1,
+                'loan_history': 2,
+            },
+            {
+                'id': 7,
+                'name': 'jordyn@test.com',
+                'email': 'Jordyn George',
+                'job_title': 'Client Success Associate',
+                'phone_number': '123-456-7890',
+                'location': 'St.Ann',
+                'status': 0,
+                'loan_history': 7,
+            },
+            {
+                'id': 8,
+                'name': 'Skylar Herwitz',
+                'email': 'skylar@test.com',
+                'job_title': 'Senior UX Designer',
+                'phone_number': '123-456-7890',
+                'location': 'Clarendon',
+                'status': 1,
+                'loan_history': 4,
+            },
+        ];
+        let lists_user = "";
+        lists.forEach(list => {
+            lists_user += ` <tr class="border-b">
+            <td class="px-3 py-4 ">
+                <div class="flex items-center">
+                    <label
+                        class="text-blue-500 inline-flex justify-between items-center hover:bg-gray-200 px-2 py-2 rounded-lg cursor-pointer">
+                        <input type="checkbox"
+                            class="form-checkbox  focus:outline-none focus:shadow-outline">
+                    </label>
+                    <div class="flex items-center ">
+                        <div class="ml-[12px]">
+                            <img src="../../images/avatar.svg" alt="">
+                        </div>
+                        <div class="ml-[12px]">
+                            <h1
+                                class="text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                ${list.name}</h1>
+                            <p
+                                class="text-[#747A80] text-[10px] not-italic font-normal leading-[21px] ">
+                                ${list.email}</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class=" border-gray-300">
+                <span
+                    class="text-[#000] flex items-start justify-start text-[14px] not-italic font-font-medium leading-[19px] ">${list.job_title}</span>
+            </td>
+            <td class=" border-gray-300">
+                <span
+                    class="text-[#000] flex items-center justify-center text-[14px] not-italic font-font-medium leading-[19px] ">${list.phone_number}</span>
+            </td>
+            <td class=" border-gray-300">
+                <span
+                    class="text-[#000] flex items-start justify-start text-[14px] not-italic font-font-medium leading-[19px] ">${list.location}</span>
+            </td>
+            <td class=" border-gray-300">
+                <div class="flex items-center justify-center  relative">
+                    <div class="flex items-center justify-between" data-id="1"
+                        id="show_dropdown">`;
+                        if (list.status == 1) {
+                            lists_user += `<button
+                            class="text-[#1AAF5D] py-1 rounded-lg px-10 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-font-medium leading-[19px]">VERIFIED</button>
+             <img src="../../images/dropdown.svg" class="ml-3" alt="">`;
+                        } else {
+                            lists_user += `<button
+                            class="text-[#FF0000] py-1 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-font-medium leading-[19px]">UNVERIFIED</button>
+             <img src="../../images/dropdown.svg" class="ml-3" alt="">`;
+                        }
+          
+             lists_user += ` </div>
+                    <div class="absolute w-[80%] shadow py-3 px-3 bg-white top-9 left-3 hidden"
+                        data-val="1" id="dropdown">
+                        <h1
+                            class="px-3 cursor-pointer mb-2 hover:text-[#1AAF5D] py-1 rounded-lg text-[#1AAF5D]  hover:bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-font-medium leading-[19px]">
+                            Verified</h1>
+                        <hr>
+                        <h1
+                            class="px-3 cursor-pointer hover:text-[#FF0000] text-[#FF0000] py-1 rounded-lg mt-2 hover:bg-[#FFEDEC] flex items-center justify-center text-[12px] not-italic font-font-medium leading-[19px]">
+                            Unverified</h1>
+                    </div>
+                </div>
 
-    const show_dropdown=document.getElementById('show_dropdown');
-    const dropdown=document.getElementById('dropdown');
-    show_dropdown.addEventListener('click',function(){
-        console.log(this.data('id'));
-    })
+            </td>
+            <td class=" border-gray-300">
+                <span
+                    class="text-[#000] flex items-center justify-center text-[14px] not-italic font-font-medium leading-[19px] ">${list.loan_history}</span>
+            </td>
+            <td class=" border-gray-300">
+                <div class="flex items-center space-x-3">
+                    <a href="./overview.html">
+                        <img src="../../images/view-action.svg" alt="">
+                    </a>
+                    <img src="../../images/edit-action.svg" alt="">
+                    <img src="../../images/delete-action.svg" alt="">
+                </div>
+            </td>
+        </tr>`;
+        });
+        document.getElementById('all_users').innerHTML = lists_user;
     </script>
 </body>
 

@@ -14,44 +14,49 @@
 
 <body>
     <main class="flex">
-        <div class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
+            style='z-index:9999 !important;'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
+                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             <div class="flex justify-center">
-                <img src="../../images/logo.svg" alt="">
+                <img src="../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="../dashboard.html" class="flex items-center group">
+                    <li class="px-5">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[white] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-[#FB6039] text-[16px]  group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
+                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Loans</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
+                                class="ml-4 text-white  text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -60,7 +65,7 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="../customer/dashboard.html" class="flex items-center group">
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
                             <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
@@ -71,18 +76,27 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
-                    <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Report</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
+                    <li class=" px-5">
+                        <a href="/src/report.html" class="flex items-center group">
+                            <div
+                                class="w-[30px] h-[30px] bg-[url('../images/active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-[#FB6039] text-[16px] font-semibold leading-[22.93px]">Report</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -92,7 +106,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -103,11 +117,16 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full md:ml-[250px] ml-0 bg-white">
+        <div class="w-full md:ml-[250px] ml-0 ">
             <div>
-                <div class="container mx-auto px-10">
-                    <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4">
-                        <div>
+                <div class="container mx-auto px-10 bg-white">
+                    <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4 ">
+                        <div class="flex items-center space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
@@ -123,41 +142,41 @@
                     </nav>
                 </div>
                 <hr class="bg-[#E6EFF5] border">
-                <div class="container mx-auto sm:px-10 px-4 pt-8 bg-white">
+                <div class="container mx-auto sm:px-10 px-4 pt-8 bg-gray-50">
                     <div class="flex sm:items-center items-start sm:flex-row flex-col">
                         <div>
                             <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">Reports</h1>
                         </div>
                     </div>
-                    <div class="mt-[88px] ">
-                        <div class="lg:flex block">
-                            <div class="md:w-1/3 w-full">
-                                <div class="flex items-center">
+                    <div class="mt-[38px]">
+                        <div class="lg:flex block  gap-6 ">
+                            <div class="md:w-1/3 w-full rounded-xl bg-white py-10 h-1/2">
+                                <a class="flex items-center mx-6 rounded-lg px-4 py-6 hover:bg-gray-50">
                                     <img src="../images/report/user.svg" alt="">
-                                    <h1 class="text-[#111827] text-[15px] font-medium ml-8">Customers</h1>
-                                </div>
-                                <div class="flex items-center mt-12">
+                                    <h1 class="text-[#111827]  text-[15px] font-medium ml-8">Customers</h1>
+                                </a>
+                                <a class="flex items-center mt-2 mx-6 rounded-lg px-4 py-6 bg-gray-50">
                                     <img src="../images/report/lock.svg" alt="">
                                     <h1 class="text-[#111827] text-[15px] font-medium ml-8">Loans</h1>
-                                </div>
-                                <div class="flex items-center mt-12">
+                                </a>
+                                <a class="flex items-center mt-2 mx-6 rounded-lg px-4 py-6 hover:bg-gray-50">
                                     <img src="../images/report/down.svg" alt="">
                                     <h1 class="text-[#111827] text-[15px] font-medium ml-8">Applications</h1>
-                                </div>
-                                <div class="flex items-center mt-12">
+                                </a>
+                                <a class="flex items-center mt-2 mx-6 rounded-lg px-4 py-6 hover:bg-gray-50">
                                     <img src="../images/report/wallet.svg" alt="">
                                     <h1 class="text-[#111827] text-[15px] font-medium ml-8">Payments</h1>
-                                </div>
+                                </a>
                             </div>
-                            <div class="w-full">
+                            <div class="w-full bg-white md:mt-0 mt-5 p-5 rounded-xl">
                                 <div class="flex items-center justify-between mb-[16px]">
                                     <h1 class="text-[20px] font-bold">Purpose</h1>
                                     <a href="dashboard.html">
                                         <button
                                             class="rounded-[10px] bg-[#000032] py-2 px-10 justify-around flex items-center text-white text-[14px] font-bold leading-[29.33px]"
                                             style="box-shadow: 0px 4px 16px 0px #B3C0E7;"> <img
-                                                src="../images/report/download.svg" alt=""><span
-                                                class="ml-4">Download Data</span></button></a>
+                                                src="../images/report/download.svg" alt=""><span class="ml-4">Download
+                                                Data</span></button></a>
                                 </div>
                                 <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1  gap-4 lg:mt-0 mt-6">
                                     <div class="">
@@ -251,8 +270,47 @@
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr class="border-b">
+                                        <tbody id="all_users">
+                                            <!-- <tr class="border-b">
+                                                <td class="px-3 py-4 ">
+                                                    <div class="flex items-center">
+                                                        <div class="flex items-center ">
+                                                            <div class="ml-[12px]">
+                                                                <h1
+                                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                                    Jonathan Brown</h1>
+                                                                <p
+                                                                    class="text-[#A0AEC0] text-[14px] not-italic font-normal leading-[21px]  my-1">
+                                                                    jonathan@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                    BYL001
+                                                </td>
+                                                <td
+                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                    Back to School
+                                                </td>
+                                                <td
+                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                    30,000
+                                                </td>
+                                                <td
+                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                                    9 Months
+                                                </td>
+
+                                                <td class=" border-gray-300">
+                                                    <div class="flex items-center justify-center ">
+                                                        <button
+                                                            class="text-[#EB001B] py-2 rounded-lg px-10 bg-[#f7bdc4] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                                    </div>
+                                                </td>
+                                            </tr> -->
+                                            <!-- <tr class="border-b">
                                                 <td class="px-3 py-4 ">
                                                     <div class="flex items-center">
                                                         <div class="flex items-center ">
@@ -524,50 +582,11 @@
                                                             class="text-[#EB001B] py-2 rounded-lg px-10 bg-[#f7bdc4] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
                                                     </div>
                                                 </td>
-                                            </tr>
-                                            <tr class="border-b">
-                                                <td class="px-3 py-4 ">
-                                                    <div class="flex items-center">
-                                                        <div class="flex items-center ">
-                                                            <div class="ml-[12px]">
-                                                                <h1
-                                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                                    Jonathan Brown</h1>
-                                                                <p
-                                                                    class="text-[#747A80] text-[14px] not-italic font-normal leading-[21px]  my-1">
-                                                                    jonathan@gmail.com</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                    BYL001
-                                                </td>
-                                                <td
-                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                    Back to School
-                                                </td>
-                                                <td
-                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                    30,000
-                                                </td>
-                                                <td
-                                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
-                                                    9 Months
-                                                </td>
-
-                                                <td class=" border-gray-300">
-                                                    <div class="flex items-center justify-center ">
-                                                        <button
-                                                            class="text-[#EB001B] py-2 rounded-lg px-10 bg-[#f7bdc4] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="mt-[22px]">
+                                <!-- <div class="mt-[22px]">
                                     <div class="flex item-center">
                                         <h1
                                             class="text-[#000] text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
@@ -583,13 +602,13 @@
                                             <img src="../../images/single-next.svg" alt="">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="py-5 mt-[28px] pl-[60px] bg-white" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
+                <div class="py-5 mt-[28px] pl-[60px] " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
                     <div class="sm:flex block  items-center sm:space-x-5">
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
@@ -601,6 +620,119 @@
             </div>
         </div>
     </main>
+
+    <script>
+        const lists = [
+            {
+                'id': 1,
+                'name': 'Pristia Candra',
+                'email': 'pc@test.com',
+                'loan_id': 'BYL001',
+                'purpose': 'Back to School',
+                'amount': '30,000',
+                'status': 1,
+                'terms': '9 Months',
+            },
+            {
+                'id': 2,
+                'name': 'Hanna Baptista',
+                'email': 'hanna@test.com',
+                'loan_id': 'BYL002',
+                'purpose': 'Vacation',
+                'amount': '45,000',
+                'status': 1,
+                'terms': '8 Months',
+            },
+            {
+                'id': 3,
+                'name': 'Jane Doe',
+                'email': 'jane@test.com',
+                'loan_id': 'BYL003',
+                'purpose': 'Medical',
+                'amount': '30,000',
+                'status': 1,
+                'terms': '6 Months',
+            },
+            {
+                'id': 4,
+                'name': 'Travis Scott',
+                'email': 'travis@test.com',
+                'loan_id': 'BYL004',
+                'purpose': 'Back to School',
+                'amount': '15,000',
+                'status': 0,
+                'terms': '3 Months',
+            },
+            {
+                'id': 5,
+                'name': 'Hanna Bethel',
+                'email': 'hannab@test.com',
+                'loan_id': 'BYL005',
+                'purpose': 'Back to School',
+                'amount': '25,850',
+                'status': 0,
+                'terms': '5 Months',
+            },
+            {
+                'id': 6,
+                'name': 'Mary Gualaline',
+                'email': 'mary@test.com',
+                'loan_id': 'BYL006',
+                'purpose': 'Medical',
+                'amount': '13,520',
+                'status': 0,
+                'terms': '3 Months',
+            },
+        ];
+        let lists_user = "";
+        lists.forEach(list => {
+            lists_user += `  <tr class="border-b">
+                                <td class="px-3 py-4 ">
+                                    <div class="flex items-center">
+                                        <div class="flex items-center ">
+                                            <div class="ml-[12px]">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">${list.name}</h1>
+                                                <p
+                                                    class="text-[#A0AEC0] text-[14px] not-italic font-normal leading-[21px]  my-1">
+                                                    ${list.email}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                    ${list.loan_id}
+                                </td>
+                                <td
+                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                    ${list.purpose}
+                                </td>
+                                <td
+                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                    ${list.amount}
+                                </td>
+                                <td
+                                    class=" border-gray-300 text-[#000] text-[14px] not-italic font-medium leading-[19px] ">
+                                  ${list.terms}
+                                </td>
+                                <td class=" border-gray-300">
+                                    <div class="flex items-center justify-center ">`;
+            if (list.status == 1) {
+                lists_user += `<button
+                                            class="text-[#0CAF60] py-1 rounded-lg px-10 bg-green-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] uppercase">Current</button>`;
+            } else {
+                lists_user += `<button
+                                            class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] uppercase">DECLINED</button>`;
+            }
+
+            lists_user += `</div>
+                                </td>
+                            </tr>`;
+        });
+        document.getElementById('all_users').innerHTML = lists_user;
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

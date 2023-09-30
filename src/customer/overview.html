@@ -14,7 +14,7 @@
 
 <body>
     <main class="flex">
-        <div id="sidebar" class="md:block hidden w-[250px] h-full bg-[#000032] fixed overflow-y-scroll overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto" style='z-index:9999 !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
                 class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -22,20 +22,20 @@
             <div class="flex justify-center">
                 <img src="../../images/logo.svg" alt="">
             </div>
-            <div class="mt-10 pb-10 flex flex-col justify-between h-full bg-[#000032]">
+            <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
                     <li class="px-5">
-                        <a href="dashboard.html" class="flex items-center group">
+                        <a href="/src/dashboard.html" class="flex items-center group">
                             <div
-                                class="w-[30px] h-[30px] bg-[url('../images/active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-dashboard.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-dashboard.svg')]">
                             </div>
                             <span
-                                class="ml-4 group-hover:text-[#FB6039] text-[#FB6039] text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Dashboard</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/loan/dashboard.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
@@ -44,18 +44,18 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/transfer.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
+                                class="ml-4 text-white  text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/collection/index.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="./customer/dashboard.html" class="flex items-center group">
+                        <a href="/src/customer/dashboard.html" class="flex items-center group">
                             <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
@@ -75,8 +75,17 @@
                     </li>
                 </ul>
                 <ul class="ml-4">
+                    <li class=" px-5 mb-4">
+                        <a href="/src/calculator/index.html" class="flex items-center group">
+                            <div
+                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                            </div>
+                            <span
+                                class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
+                        </a>
+                    </li>
                     <li class=" px-5">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/report.html" class="flex items-center group">
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-report.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-report.svg')]">
                             </div>
@@ -85,8 +94,8 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                        <a href="/src/setting/company-information.html" class="flex items-center group">
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -96,7 +105,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -112,7 +121,12 @@
                 <div class="bg-white">
                     <div class="container mx-auto px-10">
                         <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
-                            <div>
+                            <div class="flex items-center space-x-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                                </svg>
                                 <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                             </div>
                             <div class="flex items-center space-x-6">
@@ -232,23 +246,23 @@
                                 <div class="container mx-auto px-10">
                                     <div class="flex flex-wrap items-center justify-around mt-6 text-center">
                                         <div class="">
-                                            <h1
+                                            <a href="overview.html"
                                                 class="md:my-0 my-2 text-[#000]  text-[15px] mb-1 font-normal not-italic leading-[19px]  ">
-                                                Personal Information</h1>
+                                                Personal Information</a>
                                             <div class="customer_divide_of_element w-[210px]"></div>
                                         </div>
-                                        <h1
+                                        <a href="loans.html"
                                             class="md:my-0 my-2 text-[#000] text-[15px] font-normal not-italic leading-[19px] text-left ">
-                                            Loans</h1>
-                                        <h1
+                                            Loans</a>
+                                        <a href="payment.html"
                                             class="md:my-0 my-2 text-[#000] text-[15px] font-normal not-italic leading-[19px] text-left">
-                                            Payments</h1>
-                                        <h1
+                                            Payments</a>
+                                        <a href="document.html"
                                             class="md:my-0 my-2 text-[#000] text-[15px] font-normal not-italic leading-[19px] text-left">
-                                            Documents</h1>
-                                        <h1
+                                            Documents</a>
+                                        <a href="document.html"
                                             class="md:my-0 my-2 text-[#000] text-[15px] font-normal not-italic leading-[19px] text-left">
-                                            Settings</h1>
+                                            Settings</a>
                                     </div>
                                     <hr class="customer_divide">
                                 </div>
@@ -373,14 +387,7 @@
             </div>
         </div>
     </main>
-    <script>
-
-        const show_dropdown = document.getElementById('show_dropdown');
-        const dropdown = document.getElementById('dropdown');
-        show_dropdown.addEventListener('click', function () {
-            console.log(this.data('id'));
-        })
-    </script>
+     <script src="../../js/script.js"></script>
 </body>
 
 </html>
