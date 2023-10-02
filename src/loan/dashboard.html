@@ -14,8 +14,8 @@
 
 <body>
     <main class="flex">
-        <div id="sidebar"
-            class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto">
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
+            style='z-index:9999 !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
                 class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -79,7 +79,7 @@
                     <li class=" px-5 mb-4">
                         <a href="/src/calculator/index.html" class="flex items-center group">
                             <div
-                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
                             </div>
                             <span
                                 class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
@@ -105,7 +105,7 @@
                         </a>
                     </li>
                     <li class="px-5 mt-4">
-                        <a href="" class="flex items-center group">
+                        <a href="/src/" class="flex items-center group">
                             <!-- <img src="../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
@@ -123,10 +123,10 @@
                     <nav class="flex items-center sm:flex-row flex-col justify-between py-6 gap-4">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                        </svg>
+                                stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
                             <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
                         </div>
                         <div class="flex items-center space-x-6">
@@ -158,21 +158,29 @@
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center relative">
+                                <div
+                                    class="py-2 px-2 rounded-md w-full border flex items-center justify-center relative">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All Status</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
 
-                                    <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md" style="z-index: 9999 !important;">
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-blue-100 px-5 rounded-md">Pending</a>
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Declined</a>
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-gray-100 px-5 rounded-md">Canceled</a>
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-purple-100 px-5 rounded-md">Pre-Approved</a>
-                                        <a href="#" class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Transfer</a>
+                                    <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md"
+                                        style="z-index: 9999 !important;">
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-blue-100 px-5 rounded-md">Pending</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Declined</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-gray-100 px-5 rounded-md">Canceled</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-purple-100 px-5 rounded-md">Pre-Approved</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Transfer</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sm:col-span-1">    
+                            <div class="sm:col-span-1">
                                 <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Payment Type
                                     </h1>
@@ -219,14 +227,16 @@
                                         <th class="py-4 px-6 text-center ">
                                             <div class="flex items-center justify-around ">
                                                 <h1
-                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">Amount</h1>
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                    Amount</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
                                         <th class="py-4 px-6 text-center ">
                                             <div class="flex items-center justify-around ">
                                                 <h1
-                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">Payment Date</h1>
+                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                    Payment Date</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
@@ -260,9 +270,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Jonathan Brown</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,8 +321,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
-                                        </div>
+                                                <button
+                                                    class="text-[#1AAF5D] py-2 rounded-lg px-10 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -333,9 +346,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Meriam Bagloo</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Meriam Bagloo</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -382,8 +397,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-blue-500 py-2 rounded-lg px-10 bg-blue-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Pending</button>
-                                        </div>
+                                                <button
+                                                    class="text-blue-500 py-2 rounded-lg px-10 bg-blue-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Pending</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -406,9 +422,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Alyssa Wright</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Alyssa Wright</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -455,8 +473,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-red-600 py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Declined</button>
-                                        </div>
+                                                <button
+                                                    class="text-red-600 py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Declined</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -479,9 +498,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Gloria Gray</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Gloria Gray</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -520,7 +541,7 @@
                                             <div class="">
                                                 <h1
                                                     class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Dec 15, 2022    </h1>
+                                                    Dec 15, 2022 </h1>
                                                 <p
                                                     class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
                                                     Date</p>
@@ -528,8 +549,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#2D3748] py-2 rounded-lg px-10 bg-gray-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
-                                        </div>
+                                                <button
+                                                    class="text-[#2D3748] py-2 rounded-lg px-10 bg-gray-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -552,9 +574,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Janae Matali</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Janae Matali</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -601,8 +625,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#5F38CA] py-2 rounded-lg px-10 bg-purple-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
-                                        </div>
+                                                <button
+                                                    class="text-[#5F38CA] py-2 rounded-lg px-10 bg-purple-200 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Current</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -625,9 +650,11 @@
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                        class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">Charmaine Lewis</h1>
-                                                    <p
-                                                        class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">Customer</p>
+                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            Charmaine Lewis</h1>
+                                                        <p
+                                                            class="text-[#747A80] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            Customer</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -674,8 +701,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button class="text-[#FB6039] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Transfer</button>
-                                        </div>
+                                                <button
+                                                    class="text-[#FB6039] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Transfer</button>
+                                            </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around">
@@ -720,7 +748,7 @@
         </div>
     </main>
 
-    <script  src="../../js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>
