@@ -634,8 +634,28 @@ video {
   top: 170px;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-1 {
@@ -1092,6 +1112,22 @@ video {
   width: 100%;
 }
 
+.w-\[188px\] {
+  width: 188px;
+}
+
+.w-\[800px\] {
+  width: 800px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1314,6 +1350,10 @@ video {
   border-style: dashed;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1497,6 +1537,26 @@ video {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFC1A5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 193 165 / var(--tw-bg-opacity));
+}
+
+.bg-orange-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E56444\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 100 68 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F4C952\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 201 82 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -1678,6 +1738,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-\[11px\] {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1735,6 +1800,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[11px\] {
+  padding-top: 11px;
+}
+
 .pt-\[31px\] {
   padding-top: 31px;
 }
@@ -1745,6 +1814,30 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-left {
@@ -1765,6 +1858,10 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-\[\'Inter\'\] {
+  font-family: 'Inter';
 }
 
 .text-2xl {
@@ -1850,6 +1947,15 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -2169,6 +2275,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#111827CC\] {
+  color: #111827CC;
+}
+
+.text-zinc-950 {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 11 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2528,6 +2643,15 @@ body {
 .hover\:bg-red-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#\#F8F9FB\]:hover {
+  background-color: ##F8F9FB;
+}
+
+.hover\:bg-\[\#F8F9FB\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 249 251 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#1AAF5D\]:hover {
@@ -2914,6 +3038,10 @@ body {
 
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
