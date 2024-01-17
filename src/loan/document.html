@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Loan - Overview</title>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -14,7 +14,8 @@
 
 <body>
     <main class="flex">
-        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto" style='z-index:9999 !important;'>
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
+            style='z-index:9999 !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
                 class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -78,7 +79,7 @@
                     <li class=" px-5 mb-4">
                         <a href="/src/calculator/index.html" class="flex items-center group">
                             <div
-                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
                             </div>
                             <span
                                 class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
@@ -121,18 +122,18 @@
                 <div class="container mx-auto md:px-10 px-4">
                     <nav class="flex  items-center xl:flex-row flex-col justify-between py-6 gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        </svg>
                         <div
                             class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
                             <a href="overview.html"
-                                class="rounded-[6px]  py-2 text-black  text-[15px] not-italic font-semibold leading-[18px]">
+                                class="rounded-[6px] bg-[#000032] py-2 px-6 text-white text-[15px] not-italic font-medium leading-[18px]">
                                 Overview
                             </a>
                             <a href="comment.html"
-                                class="rounded-[6px] bg-[#000032] px-6 py-2 text-white text-[15px] not-italic font-semibold leading-[18px]">
+                                class="rounded-[6px]  py-2  text-black text-[15px] not-italic font-semibold leading-[18px]">
                                 Comment
                             </a>
                             <a href="payment.html"
@@ -244,8 +245,23 @@
                         <div class="w-full">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center space-x-6">
-                                    <h1 class="text-[#000] text-[20px] font-semibold leading-[28px]">Loan comments</h1>
+                                    <div>
+                                        <div class="flex items-center space-x-2 py-2">
+                                            <img src="../../images/new-icons/Wallet.svg" alt="">
+                                            <h1 class="text-black text-base font-medium   leading-normal">
+                                                Loan Overview</h1>
+                                        </div>
+                                        <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
+                                    </div>
 
+                                    <div>
+                                        <div class="flex items-center space-x-2 py-2">
+                                            <img src="../../images/new-icons/document-text.png" alt="">
+                                            <h1 class="text-black text-base font-medium   leading-normal">
+                                                Documents</h1>
+                                        </div>
+                                        <div class="w-[150px] h-[3px] bg-blue-600"></div>
+                                    </div>
                                 </div>
                                 <div class="flex items-center justify-between space-x-5">
                                     <h1 class="text-zinc-500 text-base font-normal   leading-[21px]">
@@ -289,110 +305,150 @@
                             <div class="w-ful h-px bg-zinc-400 bg-opacity-20"></div>
                         </div>
                         <div>
-                            <div class=" px-2  bg-white">
-                                <div class="flex flex-col h-screen justify-between "> 
-                                    <div class="mt-[40px] md:overflow-x-hidden overflow-x-scroll">
-                                        <table class="table table-auto sm:w-full w-[600px]">
-                                            <thead>
-                                                <tr>
-                                                    <td class="py-6">Comments</td>
-                                                    <td class="py-6">Date & Time</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="h-2"></tr>
-                                                <tr
-                                                    class="bg-[#FCFCFC] py-4 px-3 group rounded-lg hover:bg-[#EFEFEF] hover:rounded-lg  ">
-                                                    <td class="flex items-start space-x-5 py-3 px-4">
-                                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                                            class="w-[45px] h-[45px] rounded-full" alt="">
-                                                        <div>
-                                                            <h1
-                                                                class="text-[16px] font-bold text-[#1A1D1F] not-italic leading-[24px]">
-                                                                Andrea Plummer</h1>
-                                                            <p
-                                                                class="text-[16px] font-medium text-[#000] not-italic leading-[24px]">
-                                                                Please ask the customer to upload her most recent pay stub.
-                                                            </p>
-                                                            <div class="flex items-center space-x-5 mt-4 ">
-                                                                <a href="">
-                                                                    <span
-                                                                        class="text-[17px] font-semibold text-[#6F767E] not-italic leading-[24px]">Edit</span>
-                                                                </a>
-                                                                <a href="">
-                                                                    <img src="../../images/delete-icons.svg" class="" alt="">
-            
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="text-black text-[17px] font-semibold  leading-normal">Dec
-                                                            16, 2022 2:30 PM</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="h-4"></tr>
-                                                <tr
-                                                    class="bg-[#FCFCFC] py-4 px-3 group rounded-lg hover:bg-[#EFEFEF] hover:rounded-lg  ">
-                                                    <td class="flex items-start space-x-5 py-3 px-4">
-                                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                                            class="w-[45px] h-[45px] rounded-full" alt="">
-                                                        <div>
-                                                            <h1
-                                                                class="text-[16px] font-bold text-[#1A1D1F] not-italic leading-[24px]">
-                                                                Maureen Russel</h1>
-                                                            <p
-                                                                class="text-[16px] font-medium text-[#000] not-italic leading-[24px]">
-                                                                The utility bill submitted is not in the customer name. Please ask them to resubmit.
-                                                            </p>
-                                                            <div class="flex items-center space-x-5 mt-4 ">
-                                                                <a href="">
-                                                                    <span
-                                                                        class="text-[17px] font-semibold text-[#6F767E] not-italic leading-[24px]">Edit</span>
-                                                                </a>
-                                                                <a href="">
-                                                                    <img src="../../images/delete-icons.svg" class="" alt="">
-            
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="text-black text-[17px] font-semibold  leading-normal">Dec
-                                                            16, 2022 2:30 PM</span>
-                                                    </td>
-                                                </tr>
-                                                 
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="mt-[26px] relative">
-                                        <textarea class="w-full py-3 px-4  border bg-[#F4F4F4] outline-none" id="" cols="30" rows="5"></textarea>
-                                        <button
-                                            class=" absolute bottom-4 right-4 rounded-md bg-[#000032] py-3 px-10 text-center text-white text-[15px] font-bold  leading-[18px]" >Post Comments</button>
-                                    </div>
-                                </div>
+                            <div class="mt-[34px] mb-[10px]">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr class="bg-neutral-50 rounded-2xl ">
+                                            <th class="text-left py-6 px-6 rounded-2xl">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Document name</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Owner</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Date</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5 rounded-2xl">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Action</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="h-5"></tr>
+                                        <tr>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">
+                                                Payslip_Aug202023_pdf</td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">Kelly Plummer
+                                            </td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">August 26, 2023
+                                                1:54PM</td>
+                                            <td>
+                                                <div class="flex items-center space-x-3">
+                                                    <img src="../../images/new-icons/view.png" alt="">
+                                                    <img src="../../images/new-icons/download.png" alt="">
+                                                    <img src="../../images/new-icons/delete.png" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="h-5"></tr>
+                                        <tr>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">
+                                                Payslip_Aug202023_pdf</td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">Kelly Plummer
+                                            </td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">August 26, 2023
+                                                1:54PM</td>
+                                            <td>
+                                                <div class="flex items-center space-x-3">
+                                                    <img src="../../images/new-icons/view.png" alt="">
+                                                    <img src="../../images/new-icons/download.png" alt="">
+                                                    <img src="../../images/new-icons/delete.png" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="fixed left-0 top-0 hidden h-full w-full items-center justify-center bg-black bg-opacity-70 py-10 px-5 "
+                    id="model">
+                    <div class="max-h-full w-full max-w-xl overflow-y-auto rounded-2xl bg-white">
+                        <div class="w-full">
+                            <div class="m-8  max-w-[400px] mx-auto ">
+                                <div class="mb-8">
+                                    <h1 class="mb-4 text-center text-[18px] font-semibold not-italic">Upload Customer
+                                        Files</h1>
+                                    <div class="border border-dashed bg-slate-100 border-gray-500 relative file_border">
+                                        <input type="file" multiple
+                                            class="cursor-pointer relative block opacity-0 w-full h-full p-20 z-50">
+                                        <div
+                                            class="text-center flex flex-col items-center p-10 absolute top-0 right-0 left-0 m-auto">
+                                            <img class="mr-2" src="../../images/new-icons/Folder.png" alt="">
+                                            <p class="text-black text-opacity-80 text-base font-medium ">Click here to attach file</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button
+                                        class="rounded-2xl mx-auto bg-[#000032] flex items-center py-3 px-10 text-white text-[14px] font-bold leading-[22.33px]"
+                                        style=" letter-spacing: 0.2px;"> <img class="mr-2"
+                                            src="../../images/upload-1.svg" alt=""> Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="py-5 mt-[28px] pl-[60px] bg-white" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
                     <div class="sm:flex block  items-center sm:space-x-5">
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
                         <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
-                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights
+                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All
+                            rights
                             reserved Bylt Finance</h1>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script>
+        const model = document.getElementById('model');
+        const show_model = document.getElementById('show_model');
+        show_model.addEventListener('click', function () {
+            if (model.classList.contains('hidden')) {
+                model.classList.add('flex');
+                model.classList.remove('hidden');
+            }
+        })
+        function handleClickOutside(event) {
+            if (event.target === model) {
+                if (model.classList.contains('flex')) {
+                    model.classList.remove('flex');
+                    model.classList.add('hidden');
+                }
+            }
+        }
+
+        document.addEventListener('click', handleClickOutside);
+
+
+        const loan_dropdown = document.getElementById('loan_dropdown');
+        const show_loan_dropdown = document.getElementById('show_loan_dropdown');
+
+        loan_dropdown.addEventListener('click', function () {
+            if (show_loan_dropdown.classList.contains('hidden')) {
+                show_loan_dropdown.classList.add('block')
+                show_loan_dropdown.classList.remove('hidden')
+            } else {
+                show_loan_dropdown.classList.remove('block')
+                show_loan_dropdown.classList.add('hidden')
+            }
+        })
+
+    </script>
     <script src="../../js/script.js"> </script>
- 
 </body>
 
 </html>
