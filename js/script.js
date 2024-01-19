@@ -12,6 +12,22 @@ closed_sidebar.addEventListener('click', function () {
 })
 
 
+const our_model_hide=document.querySelector('#our_model_hide');
+const payment_model=document.querySelector('#payment_model');
+const show_payment_model=document.querySelector('#show_payment_model');
+
+show_payment_model.addEventListener('click',function(e){
+    e.preventDefault();
+    payment_model.classList.add('block');
+    payment_model.classList.remove('hidden');
+});
+
+our_model_hide.addEventListener('click',function(e){
+    e.preventDefault();
+    payment_model.classList.remove('block');
+    payment_model.classList.add('hidden');
+});
+
 const main_content_dropdown = document.querySelectorAll('.main_content_dropdown');
 const value_dropdown = document.querySelector('#value_dropdown');
 let dropdown_value ='';

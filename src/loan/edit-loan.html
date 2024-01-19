@@ -128,7 +128,7 @@
                         </svg>
                         <div
                             class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
-                            <a href="overview.html"
+                            <a href="new_overview.html"
                                 class="rounded-[6px] bg-[#000032] py-2 px-6 text-white text-[15px] not-italic font-medium leading-[18px]">
                                 Overview
                             </a>
@@ -151,14 +151,20 @@
                                 <input type="text" name="" id="" placeholder="Search"
                                     class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
                             </div>
-                            <div>
-                                <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
+                            <div class="flex items-center space-x-6">
+                                <div class="flex items-center space-x-5 ">
+                                    <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
+                                    <div>
+                                        <h1 class="text-[#000] text-[19px] font-normal leading-normal">Jane Doe</h1>
+                                        <p class="text-[#000] text-[15px] font-normal leading-normal">Administrator</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
                 </div>
                 <div class="flex items-start w-full">
-                    <div class="w-[323px]  rounded-r-3xl bg-stone-50">
+                    <div class="w-[323px]  lg:block hidden  rounded-r-3xl bg-stone-50">
                         <div class="w-[307px] rounded-r-3xl bg-white">
                             <div>
                                 <div class="py-5">
@@ -243,8 +249,8 @@
                     </div>
                     <div class="px-4 py-3 w-full  ml-2">
                         <div class="w-full">
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center space-x-6">
+                            <div class="flex lg:flex-row flex-col items-center justify-between">
+                                <div class="flex items-center space-x-6 flex-wrap">
                                     <div>
                                         <div class="flex items-center space-x-2 py-2">
                                             <img src="../../images/new-icons/Wallet.svg" alt="">
@@ -263,7 +269,7 @@
                                         <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
                                     </a>
                                 </div>
-                                <div class="flex items-center justify-between space-x-5">
+                                <div class="flex flex-wrap items-center justify-center md:justify-end space-x-5">
                                     <h1 class="text-zinc-500 text-base font-normal   leading-[21px]">
                                         <span>Loan ID</span> <span
                                             class="text-black text-lg font-semibold   leading-normal md:ml-4 ">BYLHY0986</span>
@@ -312,7 +318,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
+                                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
                                     <div>
                                         <label for="" class="text-[17px]">Loan Status <span
                                                 class="text-red-600">*</span></label>
@@ -403,7 +409,7 @@
                                     </div>
                                 </div>
 
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
+                                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
                                     <div>
                                         <label for="" class="text-[17px]">Employment status <span
                                                 class="text-red-600">*</span></label>
@@ -441,7 +447,7 @@
                                     </div>
                                 </div>
 
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
+                                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2">
                                     <div>
                                         <label for="" class="text-[17px]">Bank name<span
                                                 class="text-red-600">*</span></label>
