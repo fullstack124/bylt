@@ -10,18 +10,19 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <main class="flex">
         <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
-            style='z-index:9999 !important;'>
+            style='z-index:9999 !important;height: 110vh !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
-                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                class="w-6 h-6 float-right md:hidden block mt-2 mr-2" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <div class="flex justify-center">
-                <img src="../../images/logo.svg" alt="">
+                <img src="/images/logo.svg" alt="">
             </div>
             <div class="mt-10 pb-10 flex h-[85vh] flex-col justify-between  bg-[#000032]">
                 <ul class="ml-4">
@@ -36,7 +37,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/loan/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-loans.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-loans.svg')]">
                             </div>
@@ -46,7 +47,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/transfer.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
@@ -56,7 +57,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/collection/index.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-collection.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-collection.svg')]">
                             </div>
@@ -66,7 +67,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/customer/dashboard.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-customer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-customer.svg')]">
                             </div>
@@ -96,7 +97,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/setting/company-information.html" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-setting.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-setting.svg')]">
                             </div>
@@ -106,7 +107,7 @@
                     </li>
                     <li class="px-5 mt-4">
                         <a href="/src/" class="flex items-center group">
-                            <!-- <img src="../../images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
+                            <!-- <img src="/images/un-active-loans.svg" class="w-[30px] h-[30px] group-hover:filter group-hover:brightness-50" alt=""> -->
                             <div
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-logout.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-logout.svg')]">
                             </div>
@@ -120,24 +121,29 @@
         <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
                 <div class="container mx-auto px-5 md:px-10 bg-white">
-                    <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
+                    <nav class="flex items-center sm:flex-row flex-row justify-between py-6">
                         <div class="flex items-center space-x-4 justify-between">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                             </svg>
-                            <h1 class="text-[#000] text-[20px] font-semibold leading-normal">Hi Jane,</h1>
-                            <div class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] flex items-center">
-                                <img src="../../images/search.svg" alt="">
-                                <input type="text" name="" id="" placeholder="Search"
-                                    class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
+                            <h1 class="text-[#000] font-semibold leading-normal text-[20px] ">Hi Jane,</h1>
+                            <div
+                                class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] hidden items-center md:block  ">
+                                <div class="flex">
+
+                                    <img src="/images/search.svg" alt="">
+                                    <input type="text" name="" id="" placeholder="Search"
+                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal ">
+                                </div>
+
                             </div>
                         </div>
                         <div class="flex items-center space-x-6">
 
                             <div class="flex items-center space-x-5 ">
-                                <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
+                                <img src="/images/admin-icon.svg" class="rounded-full w-12" alt="">
                                 <div>
                                     <h1 class="text-[#000] text-[19px] font-normal leading-normal">Jane Doe</h1>
                                     <p class="text-[#000] text-[15px] font-normal leading-normal">Administrator</p>
@@ -148,17 +154,17 @@
                 </div>
                 <hr class="bg-[#E6EFF5] border">
                 <div class="container mx-auto md:px-10 px-3 pt-8 bg-white">
-                    <div class="flex sm:items-center items-start sm:flex-row flex-col">
-                        <div>
-                            <h1 class="text-[#000] text-[22px] font-semibold leading-[28px]">Dashboard Overview</h1>
-                        </div>
+                    <!-- <div > -->
+                    <div class="flex sm:flex-row flex-col">
+                        <h1 class="text-[#000] text-[22px] font-semibold leading-[28px] text-center">Dashboard Overview</h1>
                     </div>
+                    <!-- </div> -->
                     <div class="mt-7">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                             <div style="border: 1px solid rgba(207, 219, 213, 0.70);" class="rounded-xl px-4 pb-4">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[#747A80] text-[16px] font-normal leading-[21px]">Revenue</span>
-                                    <img src="../../images/down-arrow.svg" alt="">
+                                    <img src="/images/down-arrow.svg" alt="">
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="w-full">
@@ -177,7 +183,7 @@
                             <div style="border: 1px solid rgba(207, 219, 213, 0.70);" class="rounded-xl px-4 pb-4">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[#747A80] text-[16px] font-normal leading-[21px]">Past Due </span>
-                                    <img src="../../images/arrow-up.svg" alt="">
+                                    <img src="/images/arrow-up.svg" alt="">
                                 </div>
                                 <div class="flex items-end justify-between">
                                     <div>
@@ -200,7 +206,9 @@
                                         <h1 class="text-[#000] text-[15px] font-medium leading-[18px]"></h1>
                                     </div>
                                     <div>
-                                        <img src="../../images/doc.svg" class="mt-4" alt="">
+                                        <img src="/images/doc.svg"
+                                            style="width: 40px !important; height: 40px !important;" class="mt-4"
+                                            alt="">
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +222,7 @@
                                         <h1 class="text-[#000] text-[15px] font-medium leading-[18px]">12 Loans</h1>
                                     </div>
                                     <div>
-                                        <img src="../../images/new-icons/transfer-icon.svg" class="mt-4" alt="">
+                                        <img src="/images/new-icons/transfer-icon.svg" class="mt-4" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -228,16 +236,17 @@
                                         <h1 class="text-[#000] text-[15px] font-medium leading-[18px]">15 Loans</h1>
                                     </div>
                                     <div>
-                                        <img src="../../images/new-icons/decline-icon.svg" class="mt-4" alt="">
+                                        <img src="/images/new-icons/decline-icon.svg" class="mt-4" alt="">
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="xl:flex items-start block gap-4 mt-5">
-                        <div class="xl:w-[55%] w-full ">
-                            <div class="rounded-[12px]" style="border: 1px solid rgba(207, 219, 213, 0.70);">
+                    <div class="xl:flex items-start block gap-4 mt-5 ">
+                        <div class="xl:w-[55%] w-full" style="height: 68.32vh !important;">
+                            <div class="rounded-[12px]"
+                                style="border: 1px solid rgba(207, 219, 213, 0.70); height: 100% !important;">
                                 <div class="py-5 px-6 " style="border-bottom: 1px solid rgba(207, 219, 213, 0.70);">
                                     <h1 class="text-[#000] text-[16px] not-italic font-bold leading-[24px]">Recent
                                         Applications</h1>
@@ -360,16 +369,16 @@
                                                 30,000</h1>
                                         </div>
                                     </div>
-                                    <hr>
+                                    <!-- <hr> -->
                                 </div>
+                                <!-- <br>
                                 <br>
                                 <br>
                                 <br>
                                 <br>
                                 <br>
-                                <br>
-                                <br>
-                                <div class="py-2"></div>
+                                <br> -->
+                                <!-- <div class="py-2"></div> -->
                             </div>
                         </div>
                         <div class="xl:w-[45%] w-full xl:mt-0 mt-4">
@@ -382,12 +391,12 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/home-icon.svg" alt="">
+                                                <img src="/images/home-icon.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
                                                     <h1
-                                                        class="text-[#000] text-[15px] not-italic font-semibold leading-[21px] ">
+                                                        class="text-[#000] text-[15px] not-italic font-medium leading-[21px] ">
                                                         Home Improvement</h1>
                                                     <div>
                                                         <span
@@ -408,7 +417,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/areoplan-icon.svg" alt="">
+                                                <img src="/images/areoplan-icon.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -436,7 +445,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/major-purchase.png" alt="">
+                                                <img src="/images/major-purchase.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -464,7 +473,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/midical-icon.svg" alt="">
+                                                <img src="/images/midical-icon.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -492,7 +501,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/consolidation.png" alt="">
+                                                <img src="/images/consolidation.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -520,7 +529,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/consolidation.png" alt="">
+                                                <img src="/images/back_to_school_icon.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -548,7 +557,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/consolidation.png" alt="">
+                                                <img src="/images/moving_or_rerlocation.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -576,7 +585,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/consolidation.png" alt="">
+                                                <img src="/images/special_occasion.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -604,7 +613,7 @@
                                     <div class="">
                                         <div class="flex items-center">
                                             <div>
-                                                <img src="../../images/consolidation.png" alt="">
+                                                <img src="/images/entertainment_party.svg" alt="">
                                             </div>
                                             <div class="pl-[18px] w-full">
                                                 <div class="flex items-center justify-between">
@@ -633,20 +642,32 @@
                     </div>
 
                 </div>
-                <div class="py-5 mt-[28px] pl-[60px] bg-white" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
-                    <div class="sm:flex block  items-center sm:space-x-5">
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
-                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights
-                            reserved Bylt Finance</h1>
+                <!-- pl-[60px] -->
+                <div class="py-5 mt-[28px]  bg-white " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
+                    <div class="sm:flex block space-x-5">
+                        <!-- left space -->
+                        <div class="pl-[60px] block sm:hidden" >
+                        </div>
+                        <div class="flex flex-row space-x-3 sm:space-x-5 mt-2 justify-around">
+
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
+                        </div>
+                        <div class="mt-2">
+
+                            <h1 class=" text-[#747A80] text-[15px] not-italic font-medium leading-[18px] text-center">©
+                                2022 All rights
+                                reserved Bylt Finance</h1>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="../js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>
