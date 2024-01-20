@@ -14,7 +14,8 @@
 
 <body>
     <main class="flex">
-        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto" style='z-index:9999 !important;'>
+        <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
+            style='z-index:9999 !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
                 class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -78,7 +79,7 @@
                     <li class=" px-5 mb-4">
                         <a href="/src/calculator/index.html" class="flex items-center group">
                             <div
-                                   class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
+                                class="w-[30px] h-[30px] bg-[url('../images/un-active-calculator.png')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-calculator.png')]">
                             </div>
                             <span
                                 class="ml-4 group-hover:text-[#FB6039] text-white text-[16px] font-semibold leading-[22.93px]">Calculator</span>
@@ -118,30 +119,37 @@
         </div>
         <div class="w-full md:ml-[250px] ml-0">
             <div>
-                <div class="bg-white">
-                    <div class="container mx-auto px-10">
-                        <nav class="flex items-center sm:flex-row flex-col justify-between py-6">
-                            <div class="flex items-center space-x-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                                </svg>
-                                <h1 class="text-[#000] text-[24px] font-semibold leading-normal">Hi Andrea</h1>
-                            </div>
-                            <div class="flex items-center space-x-6">
-                                <div
-                                    class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] flex items-center">
+                <div class="container mx-auto px-5 md:px-10 bg-white">
+                    <nav class="flex items-center sm:flex-row flex-row justify-between py-6">
+                        <div class="flex items-center space-x-4 justify-between">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
+                            <h1 class="text-[#000] font-semibold leading-normal text-[20px] ">Hi Jane,</h1>
+                            <div
+                                class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] hidden items-center md:block  ">
+                                <div class="flex">
+
                                     <img src="../../images/search.svg" alt="">
                                     <input type="text" name="" id="" placeholder="Search"
-                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
+                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal ">
                                 </div>
+
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-6">
+
+                            <div class="flex items-center space-x-5 ">
+                                <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
                                 <div>
-                                    <img src="../../images/admin-icon.svg" class="rounded-full w-12" alt="">
+                                    <h1 class="text-[#000] text-[19px] font-normal leading-normal">Jane Doe</h1>
+                                    <p class="text-[#000] text-[15px] font-normal leading-normal">Administrator</p>
                                 </div>
                             </div>
-                        </nav>
-                    </div>
+                        </div>
+                    </nav>
                 </div>
 
                 <hr class="bg-[#E6EFF5] border">
@@ -277,7 +285,8 @@
                                         </a>
                                     </div>
                                     <hr>
-                                    <div style="margin-top: 11px !important;" class="md:overflow-x-hidden overflow-x-scroll ">
+                                    <div style="margin-top: 11px !important;"
+                                        class="md:overflow-x-hidden overflow-x-scroll ">
                                         <table class="table-auto lg:w-full w-[600px] table">
                                             <tr style="margin-bottom: 11px !important;">
                                                 <td class="table-th-title">First Name</td>
@@ -387,7 +396,7 @@
             </div>
         </div>
     </main>
-     <script src="../../js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>
