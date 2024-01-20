@@ -117,7 +117,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full md:ml-[250px] ml-0 bg-white">
+        <div class="w-full md:ml-[250px] ml-0 bg-white h-screen">
             <div>
                 <div class="container mx-auto px-5 md:px-10 bg-white">
                     <nav class="flex items-center sm:flex-row flex-row justify-between py-6">
@@ -162,20 +162,20 @@
                     <div class="mt-[24px] ">
                         <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
                             <div class="sm:col-span-2 ">
-                                <div class="py-3 px-2 rounded-lg w-full border flex items-center">
+                                <div class="py-3 px-2 rounded-lg w-full border flex items-center ">
                                     <input type="text" name="" id="" placeholder="Search Loans"
-                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-gray-50 text-[16px] font-normal">
+                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-gray-50 text-[16px] font-normal ">
                                     <img src="../../images/search.svg" alt="">
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div
-                                    class="py-3 px-2 rounded-lg w-full border flex items-center justify-center relative">
+                                <div id="loanAllStatusbtn"
+                                    class="py-3 px-2 rounded-lg w-full border flex items-center justify-around relative cursor-pointer hover:bg-gray-100">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All Status</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
 
                                     <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md"
-                                        style="z-index: 9999 !important;">
+                                        style="z-index: 9999 !important;" id="loanAllStatusDropDown">
                                         <a href="#"
                                             class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
                                         <a href="#"
@@ -192,19 +192,22 @@
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div class="py-3 px-2 rounded-lg w-full border flex items-center justify-center">
-                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Payment Type
+                                <div class="py-3 px-2 rounded-lg w-full border flex items-center justify-around cursor-pointer hover:bg-gray-100"">
+                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Loan Purpose
                                     </h1>
-                                    <img class="ml-10" src="../../images/dropdown.svg" alt="">
+                                    <img class="ml-10 cursor-pointer" src="../../images/dropdown.svg" alt="">
                                 </div>
                             </div>
-                            <div class="sm:col-span-1 relative flex items-center justify-center">
-                                <div class=" w-full  flex items-center justify-start">
+                            <div id="loanFilterByDatebtn"
+                                class="sm:col-span-1 relative flex items-center justify-center cursor-pointer">
+                                <div class=" w-full  flex items-center justify-center">
                                     <img class="mr-2" src="../../images/calender.svg" alt="">
-                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Filter by Date</h1>
+                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px] hover:underline">
+                                        Filter by Date</h1>
                                 </div>
 
-                                <div class="absolute top-12 right-0 w-[250px] z-10 hidden">
+                                <div id="loanFilterByDateDropDown"
+                                    class="absolute top-12 right-0 w-[250px] z-10 hidden">
                                     <div class="border rounded-md w-full bg-white shadow-md">
                                         <ul>
                                             <li
@@ -250,7 +253,7 @@
                             <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
                                 <thead class="py-2 px-3    bg-[#F5F7FA]">
                                     <tr class="text-center pb-4">
-                                        <th class="py-4 text-center ">
+                                        <th class="py-4 text-center">
                                             <div class="flex items-center justify-between ">
                                                 <div class="flex items-center space-x-3 pl-3">
                                                     <input type="checkbox" name="" class="px-3" id="">
@@ -361,7 +364,7 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around ">
                                                 <button
-                                                    class="text-[#1AAF5D] py-2 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">Active</button>
+                                                    class="text-[#1AAF5D] py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">Active</button>
                                                 <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
@@ -371,7 +374,8 @@
                                                     <img src="../../images/new-icons/Action.svg" alt="">
                                                 </a>
                                                 <a href="edit-loan.html">
-                                                    <img src="../../images/new-icons/edit-action.png" alt="">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
@@ -425,8 +429,9 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-around ">
-                                                <button
-                                                    class="text-[#1AAF5D] py-2 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">Active</button>
+                                                <button style="color: #004EE4;background-color: #DFEAFF;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">In
+                                                    Review</button>
                                                 <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
@@ -436,34 +441,332 @@
                                                     <img src="../../images/new-icons/Action.svg" alt="">
                                                 </a>
                                                 <a href="edit-loan.html">
-                                                    <img src="../../images/new-icons/edit-action.png" alt="">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
 
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button style="color: #004EE4;background-color: #DFEAFF;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PRE-APPROVED</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button
+                                                    style="color: #2D3748;background-color: rgba(45, 55, 72, 0.10);;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">CANCELED</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">DENIED</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button
+                                                    style="color: #FB6039;background-color: rgba(251, 96, 57, 0.10);"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">TRANSFER</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-[22px]">
-                            <div class="flex item-center">
-                                <h1 class="text-[#000] text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
-                                    Per page</h1>
-                                <div class="flex items-center rounded-[4px]  bg-[#FFF] py-2 px-4"
-                                    style="box-shadow: 0px 4px 8px 0px rgba(179, 192, 231, 0.32);">
-                                    <span class="">40</span>
-                                    <img src="../../images/dropdown.svg" alt="">
+                            <div class="block item-center justify-between  sm:flex">
+                                <div class="flex">
+
+                                    <h1
+                                        class="text-gray-400 text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
+                                        Showing</h1>
+                                    <div class="flex items-center   bg-[#FFF] py-2 px-4  border rounded-lg"
+                                        style="width: 76px;height: 46px;">
+                                        <span class="font-light">40</span>
+                                        <img src="../../images/dropdown.svg" class="pl-4" alt="">
+                                    </div>
                                 </div>
-                                <div class="flex items-center ml-[23px] space-x-2">
+
+                                <h1 class="text-gray-400 text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
+                                    Showing 1 to 10 out of 60 records</h1>
+                                <div class="flex items-center  space-x-2">
                                     <img src="../../images/double-back.svg" alt="">
-                                    <img src="../../images/single-back.svg" alt="">
+                                    <div class="flex">
+                                        <div class=" flex items-center justify-center border rounded-lg "
+                                            style="width: 35px;height: 35px;border-color: #5F38CA;">
+                                            <p class="text-center">1</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">2</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">3</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">4</p>
+
+                                        </div>
+
+                                    </div>
+
                                     <img src="../../images/single-next.svg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="py-5 mt-[28px]  bg-white " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
+                <div class="py-5 mt-[28px] bg-white " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
                     <div class="sm:flex block space-x-5">
                         <!-- left space -->
                         <div class="pl-[60px] block sm:hidden">
