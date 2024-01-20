@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Collection</title>
+    <title>Dashboard | Loans</title>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -15,9 +15,9 @@
 <body>
     <main class="flex">
         <div id="sidebar" class="md:block hidden w-[250px] min-h-screen bg-[#000032] fixed overflow-x-auto"
-            style='z-index:9999 !important;'>
+            style='z-index:9999 !important;height: 110vh !important;'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF"
-                class="w-6 h-6 float-right md:hidden block" id="closed_sidebar">
+                class="w-6 h-6 float-right md:hidden block mt-2 mr-2" id="closed_sidebar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <div class="flex justify-center">
@@ -51,7 +51,7 @@
                                 class="w-[30px] h-[30px] bg-[url('../images/un-active-transfer.svg')] bg-cover bg-no-repeat group-hover:bg-[url('../images/active-transfer.svg')]">
                             </div>
                             <span
-                                class="ml-4 text-white  text-[16px] group-hover:text-[#FB6039] font-semibold leading-[22.93px]">Transfer</span>
+                                class="ml-4 text-white text-[16px] group-hover:text-[#FB6039]  font-semibold leading-[22.93px]">Transfer</span>
                         </a>
                     </li>
                     <li class="px-5 mt-4">
@@ -117,7 +117,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full md:ml-[250px] ml-0 bg-white">
+        <div class="w-full md:ml-[250px] ml-0 bg-white h-screen">
             <div>
                 <div class="container mx-auto px-5 md:px-10 bg-white">
                     <nav class="flex items-center sm:flex-row flex-row justify-between py-6">
@@ -151,39 +151,101 @@
                         </div>
                     </nav>
                 </div>
+
                 <hr class="bg-[#E6EFF5] border">
                 <div class="container mx-auto sm:px-10 px-4 pt-8 bg-white">
                     <div class="flex sm:items-center items-start sm:flex-row flex-col">
                         <div>
-                            <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">All Loans</h1>
+                            <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">Loans</h1>
                         </div>
                     </div>
                     <div class="mt-[24px] ">
                         <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
-                            <div class="sm:col-span-2">
-                                <div class="py-2 px-2 rounded-md w-full border flex items-center">
-                                    <input type="text" name="" id="" placeholder="Search Loan ID or Customer Name"
-                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[16px] font-normal">
+                            <div class="sm:col-span-2 ">
+                                <div class="py-3 px-2 rounded-lg w-full border flex items-center ">
+                                    <input type="text" name="" id="" placeholder="Search Loans"
+                                        class="ml-3 bg-transparent outline-none w-full placeholder:text-gray-50 text-[16px] font-normal ">
                                     <img src="../../images/search.svg" alt="">
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
+                                <div id="loanAllStatusbtn"
+                                    class="py-3 px-2 rounded-lg w-full border flex items-center justify-around relative cursor-pointer hover:bg-gray-100">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All Status</h1>
                                     <img class="ml-10" src="../../images/dropdown.svg" alt="">
+
+                                    <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md"
+                                        style="z-index: 9999 !important;" id="loanAllStatusDropDown">
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-blue-100 px-5 rounded-md">Pending</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Declined</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-gray-100 px-5 rounded-md">Canceled</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-purple-100 px-5 rounded-md">Pre-Approved</a>
+                                        <a href="#"
+                                            class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Transfer</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="sm:col-span-1">
-                                <div class="py-2 px-2 rounded-md w-full border flex items-center justify-center">
+                                <div class="py-3 px-2 rounded-lg w-full border flex items-center justify-around cursor-pointer hover:bg-gray-100"">
                                     <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Loan Purpose
                                     </h1>
-                                    <img class="ml-10" src="../../images/dropdown.svg" alt="">
+                                    <img class="ml-10 cursor-pointer" src="../../images/dropdown.svg" alt="">
                                 </div>
                             </div>
-                            <div class="sm:col-span-1">
-                                <div class="py-2 px-2 w-full  flex items-center justify-start">
+                            <div id="loanFilterByDatebtn"
+                                class="sm:col-span-1 relative flex items-center justify-center cursor-pointer">
+                                <div class=" w-full  flex items-center justify-center">
                                     <img class="mr-2" src="../../images/calender.svg" alt="">
-                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Filter by Date</h1>
+                                    <h1 class=" text-[#000] text-[14px] font-medium leading-[22px] hover:underline">
+                                        Filter by Date</h1>
+                                </div>
+
+                                <div id="loanFilterByDateDropDown"
+                                    class="absolute top-12 right-0 w-[250px] z-10 hidden">
+                                    <div class="border rounded-md w-full bg-white shadow-md">
+                                        <ul>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <div
+                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    Past 30 Days</div>
+                                            </li>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <div
+                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    Past 90 Days</div>
+                                            </li>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <div
+                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    2022</div>
+                                            </li>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <div
+                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    2023</div>
+                                            </li>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <input type="date"
+                                                    class="w-full bg-transparent outline-none border-none">
+                                            </li>
+                                            <li
+                                                class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                <input type="date"
+                                                    class="w-full bg-transparent outline-none border-none">
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -191,9 +253,10 @@
                             <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
                                 <thead class="py-2 px-3    bg-[#F5F7FA]">
                                     <tr class="text-center pb-4">
-                                        <th class="py-4 px-6 text-center ">
+                                        <th class="py-4 text-center">
                                             <div class="flex items-center justify-between ">
-                                                <div class="flex items-center">
+                                                <div class="flex items-center space-x-3 pl-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
                                                     <h1
                                                         class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                         Customer name</h1>
@@ -201,40 +264,40 @@
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
-                                        <th class="py-4 px-6 text-center">
-                                            <div class="flex items-center justify-around ">
+                                        <th class="py-4 text-left px-3">
+                                            <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                     Loan Purpose</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
-                                        <th class="py-4 px-6 text-center ">
-                                            <div class="flex items-center justify-around ">
+                                        <th class="py-4 text-left">
+                                            <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                     Loan ID</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
-                                        <th class="py-4 px-6 text-center ">
-                                            <div class="flex items-center justify-around ">
+                                        <th class="py-4 text-left px-3">
+                                            <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                     Amount</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
-                                        <th class="py-4 px-6 text-center ">
-                                            <div class="flex items-center justify-around ">
+                                        <th class="py-4 text-left">
+                                            <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                     Payment Date</h1>
                                                 <img src="../../images/up-down.svg" alt="">
                                             </div>
                                         </th>
-                                        <th class="py-4 px-6 text-center ">
-                                            <div class="flex items-center justify-around ">
+                                        <th class="py-4 text-left px-3">
+                                            <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
                                                     Loan Status</h1>
@@ -251,23 +314,21 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border-b " style="border-radius: 14px !important;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JF</h1>
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                             Jonathan Brown</h1>
                                                         <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -275,76 +336,66 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                     Medical Expenses</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                     BYLYU0321</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                     $6500</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                     Nov 23, 2022</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
+                                            <div class="flex items-center justify-around ">
                                                 <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
+                                                style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
+                                            <div class="flex items-center space-x-3 justify-center ">
                                                 <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+                                    <tr class="border-b " style="border-radius: 14px !important;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            MB</h1>
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Meriam Bagloo</h1>
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
                                                         <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -352,230 +403,66 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Major Purchase</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    BYLTU4310</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    $25,000</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Nov 23, 2022</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
-                                                <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
-                                        <td class="px-3 py-4 ">
-                                            <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            AW</h1>
-                                                    </div>
-                                                    <div class="ml-[12px]">
-                                                        <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Alyssa Wright</h1>
-                                                        <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Vacation</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    BYLTHY7318</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    $23,000</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Nov 25, 2022</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
-                                                <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
-                                        <td class="px-3 py-4 ">
-                                            <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            GG</h1>
-                                                    </div>
-                                                    <div class="ml-[12px]">
-                                                        <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Gloria Gray</h1>
-                                                        <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class=" border-gray-300">
-                                            <div class="">
-                                                <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
                                                     Medical Expenses</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    BYLAP0098</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    $10,000</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Dec 15, 2022</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
+                                            <div class="flex items-center justify-around ">
+                                                <button style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
+                                            <div class="flex items-center space-x-3 justify-center ">
                                                 <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JM</h1>
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Janae Matali</h1>
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
                                                         <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -583,76 +470,66 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Back to School</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    BYLFG5408</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    $30,000</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Dec 22, 2022</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
+                                            <div class="flex items-center justify-around ">
+                                                <button style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
+                                            <div class="flex items-center space-x-3 justify-center ">
                                                 <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="h-3"></tr>
-                                    <tr class="border" style="margin-top: 20px !important;">
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
                                         <td class="px-3 py-4 ">
                                             <div class="flex items-center">
-                                                <div class="flex items-center ">
-                                                    <div class="px-3 py-2 bg-[#f2f2f3]  rounded-full ">
-                                                        <h1
-                                                            class=" text-[#6B7280] text-[18px] not-italic font-semibold leading-[27px] text-center">
-                                                            JM</h1>
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
                                                     </div>
                                                     <div class="ml-[12px]">
                                                         <h1
-                                                            class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                            Charmaine Lewis</h1>
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
                                                         <p
-                                                            class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                            Customer</p>
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -660,55 +537,183 @@
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Vacation</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Purpose</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    BYLKL8734</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Loan ID</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    $50,000</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Amount</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="">
                                                 <h1
-                                                    class="text-[#000] text-[14px] not-italic font-semibold leading-[19px] ">
-                                                    Jan 15, 2023</h1>
-                                                <p
-                                                    class="text-[#747A80] text-[15px] not-italic font-normal leading-[21px]  my-1">
-                                                    Date</p>
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
+                                            <div class="flex items-center justify-around ">
                                                 <button
-                                                    class="text-[#EB001B] py-2 rounded-lg px-10 bg-red-100 flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] w-full">Past
-                                                    Due</button>
+                                                style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-around">
-                                                <img src="../../images/edit1.svg" alt="">
+                                            <div class="flex items-center space-x-3 justify-center ">
                                                 <a href="new_overview.html">
-                                                    <img src="../../images/folder.svg" alt="">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="border-b " style="border-radius: 14px !important;">
+                                        <td class="px-3 py-4 ">
+                                            <div class="flex items-center">
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="checkbox" name="" class="px-3" id="">
+                                                    <div class="rounded-full ">
+                                                        <img src="../../images/users.png" class="h-6 w-6" alt="">
+                                                    </div>
+                                                    <div class="ml-[12px]">
+                                                        <h1
+                                                            class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                            Jonathan Brown</h1>
+                                                        <p
+                                                            class="text-[#111827CC] text-[13px] not-italic font-normal leading-[21px]  my-1">
+                                                            jdoe@test.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Medical Expenses</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    BYLYU0321</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    $6500</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="">
+                                                <h1
+                                                    class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                    Nov 23, 2022</h1>
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center justify-around ">
+                                                <button
+                                                    style="color: #EB001B;background-color: #FFEBEE;"
+                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PAST DUE</button>
+                                                <img src="../../images/dropdown.svg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class=" border-gray-300">
+                                            <div class="flex items-center space-x-3 justify-center ">
+                                                <a href="new_overview.html">
+                                                    <img src="../../images/new-icons/Action.svg" alt="">
+                                                </a>
+                                                <a href="edit-loan.html">
+                                                    <img src="../../images/new-icons/edit-action.png" width="32px"
+                                                        height="32px" alt="">
                                                 </a>
                                             </div>
                                         </td>
@@ -717,30 +722,68 @@
                             </table>
                         </div>
                         <div class="mt-[22px]">
-                            <div class="flex item-center">
-                                <h1 class="text-[#000] text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
-                                    Per page</h1>
-                                <div class="flex items-center rounded-[4px]  bg-[#FFF] py-2 px-4"
-                                    style="box-shadow: 0px 4px 8px 0px rgba(179, 192, 231, 0.32);">
-                                    <span class="">40</span>
-                                    <img src="../../images/dropdown.svg" alt="">
+                            <div class="block item-center justify-between  sm:flex">
+                                <div class="flex">
+
+                                    <h1
+                                        class="text-gray-400 text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
+                                        Showing</h1>
+                                    <div class="flex items-center   bg-[#FFF] py-2 px-4  border rounded-lg"
+                                        style="width: 76px;height: 46px;">
+                                        <span class="font-light">40</span>
+                                        <img src="../../images/dropdown.svg" class="pl-4" alt="">
+                                    </div>
                                 </div>
-                                <div class="flex items-center ml-[23px] space-x-2">
+
+                                <h1 class="text-gray-400 text-[15px] not-italic font-semibold leading-[24px] mt-2 px-4">
+                                    Showing 1 to 10 out of 60 records</h1>
+                                <div class="flex items-center  space-x-2">
                                     <img src="../../images/double-back.svg" alt="">
-                                    <img src="../../images/single-back.svg" alt="">
+                                    <div class="flex">
+                                        <div class=" flex items-center justify-center border rounded-lg "
+                                            style="width: 35px;height: 35px;border-color: #5F38CA;">
+                                            <p class="text-center">1</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">2</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">3</p>
+                                        </div>
+                                        <div class="flex items-center justify-center "
+                                            style="width: 35px;height: 35px;">
+                                            <p class="text-center">4</p>
+
+                                        </div>
+
+                                    </div>
+
                                     <img src="../../images/single-next.svg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="py-5 mt-[28px] pl-[60px] bg-white" style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
-                    <div class="sm:flex block  items-center sm:space-x-5">
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
-                        <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
-                        <h1 class="text-[#747A80] text-[15px] not-italic font-medium leading-[18px]">© 2022 All rights
-                            reserved Bylt Finance</h1>
+                <div class="py-5 mt-[28px] bg-white " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
+                    <div class="sm:flex block space-x-5">
+                        <!-- left space -->
+                        <div class="pl-[60px] block sm:hidden">
+                        </div>
+                        <div class="flex flex-row space-x-3 sm:space-x-5 mt-2 justify-around">
+
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Privacy Policy</h1>
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">License</h1>
+                            <h1 class="text-[#000] text-[15px] not-italic font-bold leading-[18px]">Help Center</h1>
+                        </div>
+                        <div class="mt-2">
+
+                            <h1 class=" text-[#747A80] text-[15px] not-italic font-medium leading-[18px] text-center">©
+                                2022 All rights
+                                reserved Bylt Finance</h1>
+                        </div>
+
                     </div>
                 </div>
             </div>
