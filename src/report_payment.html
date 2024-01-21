@@ -184,21 +184,22 @@
                                     <!-- <h1 class="text-[20px] font-bold">Purpose</h1> -->
                                     <div class="flex items-center space-x-6 flex-wrap">
                                         <div>
+                                            <a href="report.html">
                                             <div class="flex items-center space-x-2 py-2 justify-center">
                                                 <img src="/images/new-icons/user.svg" alt="">
                                                 <h1 class="text-black text-base font-medium   leading-normal">
                                                     Customers</h1>
                                             </div>
-                                            <div class="w-[150px] h-[3px] bg-blue-600"></div>
+                                            <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
                                         </div>
-    
-                                        <a href="report_payment.html">
+                                    </a>
+                                        <a href="#">
                                             <div class="flex items-center space-x-2 py-2 justify-center">
                                                 <img src="/images/new-icons/Wallet.svg" alt=""  style="fill: black;">
                                                 <h1 class="text-black text-base font-medium   leading-normal">
                                                     Payments</h1>
                                             </div>
-                                            <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
+                                            <div class="w-[150px] h-[3px] bg-blue-600"></div>
                                         </a>
                                         <a href="report_loans.html">
                                             <div class="flex items-center space-x-2 py-2 justify-center">
@@ -223,19 +224,19 @@
                                     <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
                                         <div class="sm:col-span-2 ">
                                             <div class="py-3 px-2 rounded-lg w-full border flex items-center ">
-                                                <input type="text" name="" id="" placeholder="Search Customers"
+                                                <input type="text" name="" id="" placeholder="Search Payment"
                                                     class="ml-3 bg-transparent outline-none w-full placeholder:text-gray-50 text-[16px] font-normal ">
                                                 <img src="../../images/search.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="sm:col-span-1">
-                                            <div id="loanAllStatusbtn"
+                                            <div id=""
                                                 class="py-3 px-2 rounded-lg w-full border flex items-center justify-around relative cursor-pointer hover:bg-gray-100">
-                                                <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">All
-                                                    Status</h1>
+                                                <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Bank
+                                                    Name</h1>
                                                 <img class="ml-10" src="../../images/dropdown.svg" alt="">
 
-                                                <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md"
+                                                <!-- <div class="absolute hidden left-0 top-[104%] bg-white py-3 px-3 w-full shadow-md rounded-md"
                                                     style="z-index: 9999 !important;" id="loanAllStatusDropDown">
                                                     <a href="#"
                                                         class="block py-1 font-medium text-lg hover:bg-green-100 px-5 rounded-md">Current</a>
@@ -249,12 +250,12 @@
                                                         class="block py-1 font-medium text-lg hover:bg-purple-100 px-5 rounded-md">Pre-Approved</a>
                                                     <a href="#"
                                                         class="block py-1 font-medium text-lg hover:bg-red-100 px-5 rounded-md">Transfer</a>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="sm:col-span-1">
                                             <div class="py-3 px-2 rounded-lg w-full border flex items-center justify-around cursor-pointer hover:bg-gray-100"">
-                                                <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Location
+                                                <h1 class=" text-[#000] text-[14px] font-medium leading-[22px]">Payment type
                                                 </h1>
                                                 <img class="ml-10 cursor-pointer" src="../../images/dropdown.svg"
                                                     alt="">
@@ -333,15 +334,7 @@
                                                         <div class="flex items-center justify-between">
                                                             <h1
                                                                 class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                Email</h1>
-                                                            <img src="../../images/up-down.svg" alt="">
-                                                        </div>
-                                                    </th>
-                                                    <th class="py-4 text-left">
-                                                        <div class="flex items-center justify-between">
-                                                            <h1
-                                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                Phone</h1>
+                                                                Bank name</h1>
                                                             <img src="../../images/up-down.svg" alt="">
                                                         </div>
                                                     </th>
@@ -349,7 +342,7 @@
                                                         <div class="flex items-center justify-between">
                                                             <h1
                                                                 class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                Location</h1>
+                                                                Loan ID</h1>
                                                             <img src="../../images/up-down.svg" alt="">
                                                         </div>
                                                     </th>
@@ -357,7 +350,15 @@
                                                         <div class="flex items-center justify-between">
                                                             <h1
                                                                 class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                User ID</h1>
+                                                                Account number</h1>
+                                                            <img src="../../images/up-down.svg" alt="">
+                                                        </div>
+                                                    </th>
+                                                    <th class="py-4 text-left">
+                                                        <div class="flex items-center justify-between">
+                                                            <h1
+                                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                                Transaction ID</h1>
                                                             <img src="../../images/up-down.svg" alt="">
                                                         </div>
                                                     </th>
@@ -365,17 +366,19 @@
                                                         <div class="flex items-center justify-between">
                                                             <h1
                                                                 class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                Creation Date</h1>
+                                                                Payment Date</h1>
                                                             <img src="../../images/up-down.svg" alt="">
                                                         </div>
                                                     </th>
-                                                    <th class="py-4 px-6 text-center ">
-                                                        <div class="flex items-center justify-around ">
+                                                    <th class="py-4 text-left">
+                                                        <div class="flex items-center justify-between">
                                                             <h1
                                                                 class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                                Status</h1>
+                                                                Payment Type</h1>
+                                                            <img src="../../images/up-down.svg" alt="">
                                                         </div>
                                                     </th>
+                                                   
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -400,21 +403,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -432,13 +435,13 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
                                                 <tr class="border-b " style="border-radius: 14px !important;">
@@ -462,21 +465,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -494,16 +497,15 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
-                                              
                                                 <tr class="border-b " style="border-radius: 14px !important;">
                                                     <td class="px-3 py-4 ">
                                                         <div class="flex items-center">
@@ -525,21 +527,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -557,16 +559,15 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
-                                              
                                                 <tr class="border-b " style="border-radius: 14px !important;">
                                                     <td class="px-3 py-4 ">
                                                         <div class="flex items-center">
@@ -588,21 +589,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -620,16 +621,15 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
-                                              
                                                 <tr class="border-b " style="border-radius: 14px !important;">
                                                     <td class="px-3 py-4 ">
                                                         <div class="flex items-center">
@@ -651,21 +651,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -683,16 +683,15 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #EB001B;background-color: #FFEBEE;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">UNVERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
-                                              
                                                 <tr class="border-b " style="border-radius: 14px !important;">
                                                     <td class="px-3 py-4 ">
                                                         <div class="flex items-center">
@@ -714,21 +713,21 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
+                                                                Scotia Bank</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
+                                                                BYL125369</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
+                                                                021000089</h1>
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
@@ -746,16 +745,16 @@
                                                         </div>
                                                     </td>
                                                     <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-around ">
-                                                            <button
-                                                            style="color: #EB001B;background-color: #FFEBEE;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">UNVERIFIED</button>
-                                                            <img src="../../images/dropdown.svg" alt="">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Disbursement</h1>
                                                         </div>
                                                     </td>
+                                                   
                                                  
                                                 </tr>
-                                              
+                                               
                                             </tbody>
                                         </table>
                                     </div>
