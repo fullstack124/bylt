@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdown_value = value_dropdown.value;
             main_content_dropdown.forEach(val => {
                 console.log(dropdown_value);
+                console.log(val.getAttribute('id') );
                 if (val.getAttribute('id') == dropdown_value) {
                     console.log(true);
                     val.classList.add('grid')
