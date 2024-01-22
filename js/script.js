@@ -100,6 +100,8 @@ document.addEventListener('DOMContentLoaded', function () {
             payment_model.classList.add('hidden');
         });
 
+
+
     const main_content_dropdown = document.querySelectorAll('.main_content_dropdown');
     const value_dropdown = document.querySelector('#value_dropdown');
     let dropdown_value = '';
@@ -107,21 +109,29 @@ document.addEventListener('DOMContentLoaded', function () {
         value_dropdown.addEventListener('change', function () {
             dropdown_value = value_dropdown.value;
             main_content_dropdown.forEach(val => {
-                console.log(dropdown_value);
-                console.log(val.getAttribute('id') );
                 if (val.getAttribute('id') == dropdown_value) {
-                    console.log(true);
                     val.classList.add('grid')
                     val.classList.remove('hidden')
                 } else {
-                    console.log('false')
                     val.classList.add('hidden')
                     val.classList.remove('grid')
                 }
             });
         });
 
-
+    value_dropdown.addEventListener('change', function () {
+        if (document.getElementById('debit-card').getAttribute('id') === value_dropdown.value) {
+            document.getElementById('our_billing').classList.add('grid');
+            document.getElementById('our_billing').classList.remove('hidden');
+            document.getElementById('our_financial').classList.add('hidden');
+            document.getElementById('our_financial').classList.remove('grid');
+        } else {
+            document.getElementById('our_billing').classList.add('hidden');
+            document.getElementById('our_billing').classList.remove('grid');
+            document.getElementById('our_financial').classList.add('grid');
+            document.getElementById('our_financial').classList.remove('hidden');
+        }
+    });
     /**
     * Loan Screen
     * (All Status) Drop Down
