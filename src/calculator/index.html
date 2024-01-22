@@ -10,6 +10,19 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        .custom-width {
+            width: 70%;
+        }
+
+        @media (max-width: 767px) {
+            .custom-width {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -119,7 +132,7 @@
         </div>
         <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
-                <div class="container mx-auto px-5 md:px-10 bg-white">
+                <div class="container mx-auto px-5 md:px-10 bg-white ">
                     <nav class="flex items-center sm:flex-row flex-row justify-between py-6">
                         <div class="flex items-center space-x-4 justify-between">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -160,7 +173,7 @@
                 </div>
                 <div class="flex mx-auto sm:px-10 px-3 bg-white  items-center justify-center">
 
-                    <div class="mt-[38px] bg-white rounded-lg" style="width: 90vh;margin-bottom: 20px;
+                    <div class="mt-[38px] bg-white rounded-lg custom-width" style="margin-bottom: 20px;
                     box-shadow: 0px 3.422px 42.778px 0px rgba(0, 0, 0, 0.05);">
                         <div class="flex-col items-center gap-7  p-5 ">
                             <div>
@@ -207,8 +220,10 @@
                                                 <tr>
                                                     <th class="text-center text-md font-semibold text-[#0052ff] ">Rate
                                                     </th>
-                                                    <th class=" text-md font-semibold text-[#0052ff]  text-center" >Terms</th>
-                                                    <th class="text-center text-md font-semibold text-[#0052ff] ">Loan Amount</th>
+                                                    <th class=" text-md font-semibold text-[#0052ff]  text-center">Terms
+                                                    </th>
+                                                    <th class="text-center text-md font-semibold text-[#0052ff] ">Loan
+                                                        Amount</th>
                                                 </tr>
                                             </thead>
 
@@ -225,17 +240,17 @@
                                     <div class="mt-20 px-6">
                                         <div class="w-full flex justify-between mb-4">
                                             <!-- <tr> -->
-                                                <p class="text-md w-[250px] text-left font-medium text-black">Payment
-                                                    Towards Principle</p>
-                                                <p class="text-md text-left font-medium text-black">$5200</p>
+                                            <p class="text-md w-[250px] text-left font-medium text-black">Payment
+                                                Towards Principle</p>
+                                            <p class="text-md text-left font-medium text-black">$5200</p>
                                             <!-- </tr> -->
                                             <!-- <tr class="h-3" /> -->
                                             <!-- <tr> -->
-                                                <p class="text-md w-[250px] text-left font-medium text-black">Payment
-                                                    Towards Interest</p>
-                                                <p class="text-md text-left font-medium text-black">$800</pp>
-                                            <!-- </tr> -->
-                                                </div>
+                                            <p class="text-md w-[250px] text-left font-medium text-black">Payment
+                                                Towards Interest</p>
+                                            <p class="text-md text-left font-medium text-black">$800</pp>
+                                                <!-- </tr> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
