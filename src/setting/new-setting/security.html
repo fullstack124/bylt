@@ -179,103 +179,160 @@
                                 <img src="../../../images/setting/new-setting/lock.png" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Roles & Permission</h2>
                             </a>
-                            <div class="w-[185px] h-[3px] bg-blue-600"></div>
+                            <!-- <div class="w-[185px] h-[3px] bg-blue-600"></div> -->
                         </div>
                         <div>
                             <a href="security.html" class="flex items-center space-x-2 py-5">
                                 <img src="../../../images/setting/new-setting/group.png" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Security & Integration</h2>
                             </a>
-                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                            <div class="w-[220px] h-[3px] bg-blue-600"></div>
                         </div>
 
                     </div>
                 </div>
                 <div class="h-[0.84px] bg-slate-200"></div>
-                <div class="container mx-auto sm:px-7 px-4 pt-8 bg-white"> 
-                    <div id="show_payment_model" class="flex items-center justify-end space-x-3 cursor-pointer">
-                        <img src="../../../images/new-icons/plus.png" alt="">
-                        <h3 class=" text-blue-700 text-base font-bold font-['Inter'] leading-normal tracking-tight">Add
-                            Role</h3>
-                    </div>
-                    <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
-                        <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
-                            <thead class="py-2 px-3    bg-[#F5F7FA]">
-                                <tr class="text-center pb-4">
-                                    <th class="py-4 text-center">
-                                        <div class="flex items-center justify-between ">
-                                            <div class="flex items-center space-x-3 pl-3">
-                                                <h1
-                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">Role</h1>
-                                            </div> 
-                                        </div>
-                                    </th>
-                                    <th class="py-4 text-left px-3">
-                                        <div class="flex items-center justify-between">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">User</h1>
-                                            <img src="../../../images/up-down.svg" alt="">
-                                        </div>
-                                    </th>
-                                    <th class="py-4 text-left">
-                                        <div class="flex items-center justify-between">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">Active</h1>
-                                            <img src="../../../images/up-down.svg" alt="">
-                                        </div>
-                                    </th> 
-                                    <th class="py-4 px-6 text-center ">
-                                        <div class="flex items-center justify-around ">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                Status</h1>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                    <td class="px-3 py-4 ">
-                                        <div class="flex items-center">
-                                            <div class="flex items-center space-x-3">
+                <div class="container mx-auto sm:px-7 px-4 pt-8 bg-white">
+
+                    <div class="flex items-start">
+                        <div class=" w-[200px] space-y-2 flex flex-col">
+                            <a href="security.html" class="text-blue-700 text-sm font-semibold  leading-7">Integration</a>
+                            <a href="sso.html" class="text-black text-sm font-semibold  leading-7">Single Sign On</a>
+                            <a class="text-black text-sm font-semibold  leading-7">Audit Log</a>
+                        </div>
+                        <div class="w-full border p-3 rounded-xl">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-black text-sm font-medium  leading-[38px]">Integrate Bylt Pay with the
+                                    products
+                                    and services we use every day.</h2>
+                                <div id="show_payment_model"
+                                    class="flex items-center justify-end space-x-3 cursor-pointer">
+                                    <img src="../../../images/new-icons/plus.png" alt="">
+                                    <h3 class=" text-blue-700 text-base font-bold  leading-normal tracking-tight">Add
+                                        Integration</h3>
+                                </div>
+                            </div>
+                            <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
+                                <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
+                                    <thead class="py-2 px-3    bg-[#F5F7FA]">
+                                        <tr class="text-center pb-4">
+                                            <th class="py-4 text-left px-3">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Integration name</h1>
+                                                    <img src="../../../images/up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 text-left">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Configuration Type</h1>
+                                                    <img src="../../../images/up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 text-left">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Owner</h1>
+                                                    <img src="../../../images/up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 px-6 text-center ">
+                                                <div class="flex items-center justify-around ">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Status</h1>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b " style="border-radius: 14px !important;">
+                                            <td class="px-3 py-4 ">
+                                                <div class="flex items-center">
+                                                    <div class="flex items-center space-x-3">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Docusign</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
                                                 <div class="">
                                                     <h1
-                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Admin</h1>
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        SAML</h1>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class=" border-gray-300">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">10</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300">
-                                        <img src="../../../images/Toggle.png" alt="">
-                                    </td> 
-                                    <td class=" border-gray-300">
-                                        <div class="flex items-center space-x-3 justify-center ">
-                                            <a href="new_overview.html">
-                                                <img src="../../../images/setting/new-setting/edit.png" alt="">
-                                            </a> 
-                                            <a href="new_overview.html">
-                                                <img src="../../../images/setting/new-setting/delete.png" alt="">
-                                            </a> 
-                                        </div>
-                                    </td>
-                                </tr>  
-                            </tbody>
-                        </table>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="">
+                                                    <h1
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        Team Members</h1>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="flex items-center space-x-3 justify-center ">
+                                                    <button class="py-1 px-4 text-emerald-600 bg-emerald-50 rounded-lg">Active</button>
+                                                    <img src="../../../images/dropdown.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b " style="border-radius: 14px !important;">
+                                            <td class="px-3 py-4 ">
+                                                <div class="flex items-center">
+                                                    <div class="flex items-center space-x-3">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Docusign</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="">
+                                                    <h1
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        SAML</h1>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="">
+                                                    <h1
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        Team Members</h1>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="flex items-center space-x-3 justify-center ">
+                                                    <button class="py-1 px-4 text-rose-600 bg-rose-50 rounded-lg">Inactive</button>
+                                                    <img src="../../../images/dropdown.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+
+
                     </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
                     <div class="py-5 mt-[28px]  bg-white " style="border-top: 1px solid rgba(207, 219, 213, 0.70);">
                         <div class="sm:flex block space-x-5">
                             <!-- left space -->
@@ -300,109 +357,90 @@
                         </div>
                     </div>
                 </div>
-            </div> 
-            <div id="payment_model" class="fixed bg-[#0000008e] top-0 left-0 w-full h-screen hidden " style="z-index: 9999;">
-                <div class="fixed bg-white md:w-[500px] w-[350px]  top-0 right-0 h-screen">
+            </div>
+
+            <div id="payment_model" class="fixed bg-[#0000008e] top-0 left-0 w-full h-screen hidden"
+                style="z-index: 9999;">
+                <div class="fixed bg-white md:w-[700px] w-[350px]  top-0 right-0 h-screen  overflow-y-scroll">
                     <div class="my-10 flex items-center justify-between px-3">
                         <div id="our_model_hide" class="cursor-pointer">
                             <img src="../../../images/new-icons/Left Icon.png" alt="">
                         </div>
                         <div>
-                            <h1 class="text-black text-base font-semibold  leading-7">Role & Permission</h1>
+                            <h1 class="text-black text-base font-semibold  leading-7">Configure Single Sign On</h1>
                         </div>
                         <div>
 
                         </div>
                     </div>
-                    <div class="px-5"> 
-                        <div class="grid grid-cols-1 md:grid-cols-1 gap-3">
+                    <div class="px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="my-2">
                                 <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
-                                    <span>Role Name</span>
+                                    <span>Configuration Type</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md" name=""
-                                    id="" >
+                                <select name="" id="" class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value="">SAML</option>
+                                    <option value="">JSON Web Token</option>
+                                </select> 
+                            </div>
+                            <div class="my-2">
+                                <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                    <span>Status</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <select name="" id="" class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value="">Active</option>
+                                    <option value="">Inactive</option>
+                                </select> 
+                            </div>
+                        </div> 
+                        <div class="text-black text-sm font-medium   leading-[38px]">Security Assertion Markup Language (SAML) is an open standard for exchanging credentials and user information <br/>with an identity provider.</div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="my-2">
+                                <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                    <span>Configuration name</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <select name="" id="" class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select> 
                             </div> 
+                            <div></div>
+                            <div></div>
+                        </div> 
+                        <div>
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Remote Login URL</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">This is the URL that ByltPay will invoke to redirect users to your identity provider.</div>
+                            <input type="text"  class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
                         </div>
-                        <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
-                            <thead class="py-2 px-3    bg-[#F5F7FA]">
-                                <tr class="text-center pb-4"> 
-                                    <th class="py-4 text-left px-3">
-                                        <div class="flex items-center justify-between">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">Setting</h1> 
-                                        </div>
-                                    </th> 
-                                    <th class="py-4 px-6 text-center ">
-                                        <div class="flex items-center justify-around ">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                Access</h1>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                     
-                                    <td class=" border-gray-300 py-4 px-3">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Edit Company Information</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300 flex items-center py-4">
-                                        <img src="../../../images/Toggle.png" class="mx-auto" alt="">
-                                    </td> 
-                                </tr>  
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                     
-                                    <td class=" border-gray-300 py-4 px-3">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Edit Company Information</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300 flex items-center py-4">
-                                        <img src="../../../images/Toggle.png" class="mx-auto" alt="">
-                                    </td> 
-                                </tr>  
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                     
-                                    <td class=" border-gray-300 py-4 px-3">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Edit Company Information</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300 flex items-center py-4">
-                                        <img src="../../../images/Toggle.png" class="mx-auto" alt="">
-                                    </td> 
-                                </tr>  
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                     
-                                    <td class=" border-gray-300 py-4 px-3">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Edit Company Information</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300 flex items-center py-4">
-                                        <img src="../../../images/Toggle.png" class="mx-auto" alt="">
-                                    </td> 
-                                </tr>  
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                     
-                                    <td class=" border-gray-300 py-4 px-3">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">Edit Company Information</h1>
-                                        </div>
-                                    </td> 
-                                    <td class=" border-gray-300 flex items-center py-4">
-                                        <img src="../../../images/Toggle.png" class="mx-auto" alt="">
-                                    </td> 
-                                </tr>  
-                            </tbody>
-                        </table>
+
+                        <div class="my-5">
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Remote Login URL</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">This is the URL that ByltPay will invoke to redirect users to your identity provider.</div>
+                            <input type="text"  class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                        </div>
+                        <div>
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Shared secret</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">If you activate remote authentication, be sure to copy this token first as it will not be displayed in full again. You will be able to reset it at a later time. The token is a shared secret between you and Zendesk. It must never be publicized.</div>
+                            <div class="flex items-center">
+                                <input type="text"  class="mt-3 w-[500px] outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                <button>Copy</button>
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="flex items-center flex-col justify-center mt-10">
                         <a href="">
                             <button
@@ -414,7 +452,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
     </main>
 
