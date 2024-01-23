@@ -244,9 +244,10 @@
                                     <div class="ml-6">
                                         <a href="personal-info.html" class="flex items-center space-x-2 py-2">
                                             <img src="../../../images/customer/user.svg" alt="">
-                                            <h1 class="text-black text-base font-medium   leading-normal">Personal Info</h1>
+                                            <h1 class="text-black text-base font-medium   leading-normal">Personal Info
+                                            </h1>
                                         </a>
-                                        <div class="w-[150px] h-[3px] bg-blue-600"></div>
+                                        <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
                                     </div>
                                     <div>
                                         <a href="loans.html" class="flex items-center space-x-2 py-2">
@@ -274,7 +275,7 @@
                                             <img src="../../../images/customer/lock.svg" alt="">
                                             <h1 class="text-black text-base font-medium   leading-normal">Settings</h1>
                                         </a>
-                                        <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
+                                        <div class="w-[135px] h-[3px] bg-blue-600"></div>
                                     </div>
                                 </div>
                             </div>
@@ -282,19 +283,13 @@
                             <div class="w-ful h-px bg-zinc-400 bg-opacity-20"></div>
                         </div>
                         <div class="w-full">
-                            <div class="mt-[34px] mb-[10px] flex items-start xl:flex-row flex-col">
-                                <div
-                                    class=" xl:w-[200px] w-full xl:space-y-2 xl:space-x-0 space-x-3 flex xl:flex-col flex-row flex-wrap ">
-                                    <a href="personal-info.html"
-                                        class="text-blue-700 text-sm font-semibold  leading-7">Personal Information</a>
-                                    <a href="address.html" class="text-black text-sm font-semibold  leading-7">Address  </a>
-                                    <a href="idverifcation.html" class="text-black text-sm font-semibold  leading-7">ID Verification</a>
-                                </div>
-                                <div class=" w-full border p-5 rounded-md">
+                            <div class="mt-[34px] mb-[10px] ">
+                                 
+                                <div class=" w-full">
                                     <div class="bg-neutral-50 rounded-2xl w-full">
                                         <div
                                             class="flex items-center justify-between py-5 px-6 bg-neutral-50 rounded-2xl">
-                                            <div class="text-black text-base font-semibold  leading-normal">Customer Personal Information</div>
+                                            <div class="text-black text-base font-semibold  leading-normal">Account Settings</div>
                                             <div class="">
                                                 <a href="">
                                                     <button
@@ -305,121 +300,58 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-2">
-                                            <div>
-                                                <label for="" class="text-[17px]">First Name <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">Last Name <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">TRN Number <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">Date of Birth<span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="date" name=""  id="" class="form_input">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">Marital status <span
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2">
+                                            <div class="my-5">
+                                                <label for="" class="text-[17px]"> Account Status<span
                                                         class="text-red-600">*</span></label>
                                                 <div class="input_border_user my-2 high_light_bg">
                                                     <select name="" id=""
                                                         class="outline-none w-full py-1 text-gray-900 text-lg">
-                                                        <option value="1">Married</option>
-                                                        <option value="1">Unmarried</option>
+                                                        <option value="1">Verified </option>
+                                                        <option value="1">Unverified</option>
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> 
                                             <div>
-                                                <label for="" class="text-[17px]">Gender <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
-                                                        <option value="1">Male</option>
-                                                        <option value="1">Female</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">No of Dependent<span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
+
                                             </div>
                                         </div>
-                                        <div class="bg-neutral-50 rounded-2xl w-full my-5">
-                                            <div
-                                                class="flex items-center justify-between py-5 px-6 bg-neutral-50 rounded-2xl">
-                                                <div class="text-black text-base font-semibold  leading-normal">Employment Details</div>
+                                        <div class="flex items-center md:space-x-3 space-x-0 space-y-3 md:space-y-0 flex-col md:flex-row">
+                                            <div>
+                                                <div class="input_border_user my-2 high_light_bg">
+                                                    <input placeholder="Reset Password" type="text" name="" id="" class="form_input">
+                                                </div>
+                                            </div>
+                                            <div class="text-black text-base font-semibold   leading-[21px]">Send password reset instructions to customer. </div>
+                                            <div class="">
+                                                <a href="">
+                                                    <button
+                                                        class="rounded-xl  bg-[#000032] flex items-center py-2 px-7 text-white text-[14px] font-bold leading-[22.33px] justify-center"
+                                                        style=" letter-spacing: 0.2px;">Send</button></a>
+
                                             </div>
                                         </div>
-                                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-2">
-                                            <div>
-                                                <label for="" class="text-[17px]">Employer <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">Length of Employment <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div> 
-                                            <div>
-                                                <label for="" class="text-[17px]">Income <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div> 
-                                            <div>
-                                                <label for="" class="text-[17px]">Employment status <span
-                                                        class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
-                                                        <option value="1">Married</option>
-                                                        <option value="1">Unmarried</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="" class="text-[17px]">Emplo yer email </label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div> 
-                                            <div>
-                                                <label for="" class="text-[17px]">Employer number </label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="text" name=""  id="" class="form_input">
-                                                </div>
-                                            </div> 
-                                        </div>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
