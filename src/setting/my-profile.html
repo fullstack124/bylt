@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Report</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <main class="flex">
+        <!-- main nav -->
+        <div id="sidebar_nav"></div>
+
+        <div class="w-full md:ml-[250px] ml-0 bg-white h-screen">
+            <div>
+                <!-- header -->
+                <div id="header"></div>
+
+                <div class="bg-white container mx-auto px-5  ">
+                    <div class="flex items-center space-x-4 flex-wrap">
+                        <div class=" ml-4">
+                            <a href="my-profile.html" class="flex items-center space-x-2 py-5">
+                                <img src="/images/icons/ic_user.svg" alt="">
+                                <h2 class="text-black text-base font-medium leading-normal">My Profile</h2>
+                            </a>
+                            <div class="w-[129px] h-[3px] bg-blue-600"></div>
+                        </div>
+                        <div>
+                            <a href="company-information.html" class="flex items-center space-x-2 py-5">
+                                <img src="/images/icons/ic_building.svg" alt="">
+                                <h2 class="text-black text-base font-medium leading-normal">Company Information</h2>
+                            </a>
+                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                        </div>
+                        <div>
+                            <a href="team-member.html" class="flex items-center space-x-2 py-5">
+                                <img src="/images/icons/ic_team_members.svg" alt="">
+                                <h2 class="text-black text-base font-medium leading-normal">Team Members</h2>
+                            </a>
+                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                        </div>
+                        <div>
+                            <a href="role-and-permission.html" class="flex items-center space-x-2 py-5">
+                                <img src="/images/icons/ic_lock.svg" alt="">
+                                <h2 class="text-black text-base font-medium leading-normal">Roles & Permission</h2>
+                            </a>
+                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                        </div>
+                        <div>
+                            <a href="security.html" class="flex items-center space-x-2 py-5">
+                                <img src="/images/icons/ic_recycle_circle.svg" alt="">
+                                <h2 class="text-black text-base font-medium leading-normal">Security & Integration</h2>
+                            </a>
+                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="h-[0.84px] bg-slate-200"></div>
+                <div class="container mx-auto sm:px-7 px-4 pt-8 bg-white">
+                    <div class="px-5 bg-[#F8F8F8] py-3 rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <div class="text-gray-900 text-[15px] font-semibold   leading-snug">My Profile</div>
+                            <button
+                                class="rounded-xl  bg-[#000032] flex items-center py-2 px-7 text-white text-[14px] font-bold leading-[22.33px] justify-center"
+                                style=" letter-spacing: 0.2px;">Save </button>
+                        </div>
+                    </div>
+                    <div class="mt-[18px] ">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Employee ID</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> First Name</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Last Name</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Email Address</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Phone Number</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Role</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+                            <div>
+                                <label for="" class="text-black
+                                text-[13px]
+                                font-medium 
+                                leading-[38px]">
+                                    <span> Team</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+
+                <!-- footer -->
+                <div id="footer"></div>
+            </div>
+
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

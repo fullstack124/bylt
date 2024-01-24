@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan - Overview</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="flex">
+        <!-- main nav -->
+        <div id="sidebar_nav"></div>
+
+        <div class="w-full md:ml-[250px] ml-0 bg-white">
+            <div>
+                <!-- Header -->
+
+                <div class="container mx-auto md:px-10 px-4">
+                    <nav class="flex  items-center xl:flex-row flex-col justify-between py-6 gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden block" id="show_sidebar">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        </svg>
+                        <div
+                            class="rounded-[10px] bg-[#F5F7FA] space-x-5 py-3 px-3 flex flex-wrap justify-center sm:justify-start">
+                            <a href="edit-loan.html"
+                                class="rounded-[6px] bg-[#000032] py-2 px-6 text-white text-[15px] not-italic font-medium leading-[18px]">
+                                Overview
+                            </a>
+                            <a href="comment.html"
+                                class="rounded-[6px]  py-2  text-black text-[15px] not-italic font-semibold leading-[18px]">
+                                Comment
+                            </a>
+                            <a href="payment.html"
+                                class="rounded-[6px]  py-2  text-black text-[15px] not-italic font-semibold leading-[18px]">
+                                Payments
+                            </a>
+                            <a href="history.html"
+                                class="rounded-[6px]  py-2  text-black text-[15px] not-italic font-semibold leading-[18px]">
+                                History
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            <div class="py-2 px-6 rounded-full lg:w-[400px] w-[300px] bg-[#F5F7FA] flex items-center">
+                                <img src="/images/icons/ic_search.svg" alt="">
+                                <input type="text" name="" id="" placeholder="Search"
+                                    class="ml-3 bg-transparent outline-none w-full placeholder:text-[#8BA3CB] text-[15px] font-normal">
+                            </div>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex items-center space-x-5 ">
+                                    <img src="/images/png/profile_pic.png" class="rounded-full w-12" alt="">
+                                    <div>
+                                        <h1 class="text-[#000] text-[19px] font-normal leading-normal">Jane Doe</h1>
+                                        <p class="text-[#000] text-[15px] font-normal leading-normal">Administrator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="flex items-start w-full">
+
+                    <!-- side profile nav -->
+                    <div class="w-[323px]  lg:block hidden  rounded-r-3xl bg-stone-50">
+                        <div class="w-[307px] rounded-r-3xl bg-white">
+                            <div>
+                                <div class="py-5">
+                                    <img src="/images/png/profile_pic.png" class="mx-auto w-[81px] rounded-full" alt="">
+                                </div>
+                                <div class="space-y-2">
+                                    <div class=" text-center text-black text-lg font-medium   leading-[25.20px]">Kelly
+                                        Plummer</div>
+                                    <div class=" text-center text-slate-500 text-sm font-medium  leading-snug">Member
+                                        since: Jan 2, 2024</div>
+                                    <div class="flex items-center justify-center space-x-4">
+                                        <p class="text-center text-blue-700 text-[15px] font-bold   leading-normal">
+                                            TRN: ***-**-678</p>
+                                        <img src="/images/icons/ic_eye.svg" alt="">
+                                    </div>
+                                    <div class="flex items-center justify-center  pb-6">
+                                        <button
+                                            class="text-[#1AAF5D] rounded-lg px-10 py-2 bg-[#ddf7ea] flex items-center justify-center text-[12px] not-italic font-bold leading-[19px]">VERIFIED</button>
+                                    </div>
+                                    <div class="pl-2 pr-1">
+                                        <div class="  h-[0px] border border-gray-200"></div>
+                                    </div>
+                                </div>
+                                <div class="py-9 px-9">
+                                    <ul>
+                                        <li class="flex items-center mt-3 mb-4 space-x-2">
+                                            <img src="/images/icons/ic_gmail.svg" alt="">
+                                            <h1
+                                                class="text-[#111827] ml-2 rounded-lg  text-sm not-italic font-medium leading-[22px]">
+                                                jane@test.com</h1>
+                                        </li>
+                                        <li class="flex items-center mt-3 mb-4 space-x-2">
+                                            <img src="/images/icons/ic_phone.svg" alt="">
+                                            <h1
+                                                class="text-[#111827] ml-2 rounded-lg  text-sm not-italic font-medium leading-[22px]">
+                                                876-456-7890</h1>
+                                        </li>
+                                        <li class="flex items-center mt-3 mb-4 space-x-2">
+                                            <img src="/images/icons/ic_website.svg" alt="">
+                                            <h1
+                                                class="text-[#111827] ml-2 rounded-lg  text-sm not-italic font-medium leading-[22px]">
+                                                St.Catherine</h1>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pl-2 pr-1">
+                                    <div class="  h-[0px] border border-gray-200"></div>
+                                </div>
+                                <div class="py-6 px-9">
+                                    <div class="space-y-2">
+                                        <h6 class=" text-slate-500 text-xs font-normal  leading-tight">Date of Birth
+                                        </h6>
+                                        <div class="text-gray-900 text-sm font-semibold   leading-snug">Feb 14,1990
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2 mt-3">
+                                        <h6 class=" text-slate-500 text-xs font-normal  leading-tight">Address</h6>
+                                        <div class="text-gray-900 text-sm font-semibold   leading-snug">123 Crescent
+                                            Way,
+                                            Linstead, St.Catherine Jamaica</div>
+                                    </div>
+                                    <div class="space-y-2 mt-3">
+                                        <h6 class=" text-slate-500 text-xs font-normal  leading-tight">User Account ID
+                                        </h6>
+                                        <div class="text-gray-900 text-sm font-semibold   leading-snug">BY789456123
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center py-8">
+                                    <a href="">
+                                        <button
+                                            class="rounded-xl  bg-[#000032] flex items-center py-4 px-16 text-white text-[14px] font-bold leading-[22.33px] justify-center"
+                                            style=" letter-spacing: 0.2px;">Edit Profile </button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-[33px] min-h-screen h-[900px] rounded-r-3xl bg-stone-50">
+                    </div>
+
+                    <div class="px-4 py-3 w-full  ml-2">
+                        <div class="w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-6">
+                                    <div>
+                                        <a href="edit-loan.html">
+                                            <div class="flex items-center space-x-2 py-2">
+                                                <img src="/images/icons/ic_wallet.svg" alt="">
+                                                <h1 class="text-black text-base font-medium   leading-normal">
+                                                    Loan Overview</h1>
+                                            </div>
+                                        </a>
+                                        <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
+                                    </div>
+
+                                    <div>
+                                        <a href="edit-loan.html">
+                                            <div class="flex items-center space-x-2 py-2">
+                                                <img src="/images/icons/ic_document-text.svg" alt="">
+                                                <h1 class="text-black text-base font-medium   leading-normal">
+                                                    Documents</h1>
+                                            </div>
+                                            <div class="w-[150px] h-[3px] bg-blue-600"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between space-x-5">
+                                    <h1 class="text-zinc-500 text-base font-normal   leading-[21px]">
+                                        <span>Loan ID</span> <span
+                                            class="text-black text-lg font-semibold   leading-normal md:ml-4 ">BYLHY0986</span>
+                                    </h1>
+                                    <div class="relative">
+                                        <button id="loan_dropdown"
+                                            class=" bg-[#e8deff]  text-[15px] py-1.5 px-3 rounded-lg text-[#5F38CA] font-bold">
+                                            Pre-Approved</button>
+                                        <div class="absolute top-8 right-0  rounded-lg shadow-md hidden border"
+                                            id="show_loan_dropdown" style="z-index: 999;">
+                                            <div class="bg-white px-5  py-3">
+                                                <button
+                                                    class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#1AAF5D] not-italic"
+                                                    style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #1AAF5D;">
+                                                    Approved
+                                                </button>
+                                                <button
+                                                    class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#F00] not-italic "
+                                                    style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #F00;">
+                                                    Decline
+                                                </button>
+                                                <button
+                                                    class="py-1 px-5 my-2 rounded-lg text-[17px] font-bold w-full text-[#2D3748] not-italic "
+                                                    style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), #2D3748;">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between space-x-5">
+
+                                        <div id="show_model" class="flex items-center space-x-2 cursor-pointer">
+                                            <img src="/images/icons/ic_plus.svg" alt="">
+                                            <div
+                                                class=" text-center text-violet-700 text-base font-bold   leading-normal tracking-tight">
+                                                Add Document</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-ful h-px bg-zinc-400 bg-opacity-20"></div>
+                        </div>
+                        <div>
+                            <div class="mt-[34px] mb-[10px]">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr class="bg-neutral-50 rounded-2xl ">
+                                            <th class="text-left py-6 px-6 rounded-2xl">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Document name</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Owner</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Date</div>
+                                            </th>
+                                            <th class="text-left py-4 px-5 rounded-2xl">
+                                                <div
+                                                    class=" text-left text-slate-500 text-[15px] font-semibold  leading-normal tracking-tight">
+                                                    Action</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="h-5"></tr>
+                                        <tr>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">
+                                                Payslip_Aug202023_pdf</td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">Kelly Plummer
+                                            </td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">August 26, 2023
+                                                1:54PM</td>
+                                            <td>
+                                                <div class="flex items-center space-x-3">
+                                                    <img src="/images/icons/table/action_button/ic_view_eye_box.svg"
+                                                        alt="">
+                                                    <img src="/images/icons/table/action_button/ic_download_box.svg"
+                                                        alt="">
+                                                    <img src="/images/icons/table/action_button/ic_delete_box.svg"
+                                                        alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="h-5"></tr>
+                                        <tr>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">
+                                                Payslip_Aug202023_pdf</td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">Kelly Plummer
+                                            </td>
+                                            <td class="text-gray-900 text-sm font-normal  leading-snug">August 26, 2023
+                                                1:54PM</td>
+                                            <td>
+                                                <div class="flex items-center space-x-3">
+                                                    <img src="/images/icons/table/action_button/ic_view_eye_box.svg"
+                                                        alt="">
+                                                    <img src="/images/icons/table/action_button/ic_download_box.svg"
+                                                        alt="">
+                                                    <img src="/images/icons/table/action_button/ic_delete_box.svg"
+                                                        alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+
+                                <!-- upload dialog -->
+                                <div class="fixed left-0 top-0 hidden h-full w-full items-center justify-center bg-black bg-opacity-70 py-10 px-5 "
+                                    id="model">
+                                    <div class="max-h-full w-full max-w-xl overflow-y-auto rounded-2xl bg-white">
+                                        <div class="w-full">
+                                            <div class="m-8  max-w-[400px] mx-auto ">
+                                                <div class="mb-8">
+                                                    <h1 class="mb-4 text-center text-[18px] font-semibold not-italic">
+                                                        Upload Customer
+                                                        Files</h1>
+                                                    <div
+                                                        class="border border-dashed bg-slate-100 border-gray-500 relative file_border">
+                                                        <input type="file" multiple
+                                                            class="cursor-pointer relative block opacity-0 w-full h-full p-20 z-50">
+                                                        <div
+                                                            class="text-center flex flex-col items-center p-10 absolute top-0 right-0 left-0 m-auto">
+                                                            <img class="mr-2" src="/images/icons/ic_folder.svg" alt="">
+                                                            <p
+                                                                class="text-black text-opacity-80 text-base font-medium ">
+                                                                Click here to
+                                                                attach file</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <button
+                                                        class="rounded-2xl mx-auto bg-[#000032] flex items-center py-3 px-10 text-white text-[14px] font-bold leading-[22.33px]"
+                                                        style=" letter-spacing: 0.2px;"> <img class="mr-2"
+                                                            src="/images/icons/ic_upload.svg" alt=""> Upload</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Empty Show table -->
+                                <div class="hidden">
+                                    <div class="flex items-center justify-center mt-[112px]">
+                                        <div>
+                                            <img src="/images/png/empty.png" class="mx-auto h-24" alt="">
+                                            <h1 class=" mt-3 text-center text-gray-900 text-xl font-bold   leading-7">
+                                                Drag &
+                                                Drop here to upload</h1>
+                                            <p
+                                                class=" my-4 text-center text-gray-900 text-sm font-normal   leading-snug">
+                                                Or
+                                                select file from your computer</p>
+                                            <div class="flex items-center justify-center">
+                                                <button
+                                                    class="rounded-xl space-x-2 bg-[#000032] flex items-center py-5 px-6 text-white text-[14px] font-bold leading-[22.33px] justify-center"
+                                                    style=" letter-spacing: 0.2px;">
+                                                    <img src="/images/icons/ic_upload_doc.svg" alt="">
+                                                    <span>Upload File</span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <div id="footer"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const model = document.getElementById('model');
+        const show_model = document.getElementById('show_model');
+        if (show_model)
+            show_model.addEventListener('click', function () {
+                if (model.classList.contains('hidden')) {
+                    model.classList.add('flex');
+                    model.classList.remove('hidden');
+                }
+            })
+        function handleClickOutside(event) {
+            if (event.target === model) {
+                if (model.classList.contains('flex')) {
+                    model.classList.remove('flex');
+                    model.classList.add('hidden');
+                }
+            }
+        }
+
+        document.addEventListener('click', handleClickOutside);
+
+
+        const loan_dropdown = document.getElementById('loan_dropdown');
+        const show_loan_dropdown = document.getElementById('show_loan_dropdown');
+
+        if (loan_dropdown)
+            loan_dropdown.addEventListener('click', function () {
+                if (show_loan_dropdown.classList.contains('hidden')) {
+                    show_loan_dropdown.classList.add('block')
+                    show_loan_dropdown.classList.remove('hidden')
+                } else {
+                    show_loan_dropdown.classList.remove('block')
+                    show_loan_dropdown.classList.add('hidden')
+                }
+            })
+
+    </script>
+    <script src="../../js/script.js"> </script>
+</body>
+
+</html>

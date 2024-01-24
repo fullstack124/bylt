@@ -20,7 +20,6 @@
             <div>
                 <!-- header -->
                 <div id="header"></div>
-
                 <div class="h-[0.84px] bg-slate-200"></div>
                 <div class="bg-white container mx-auto px-5  ">
                     <div class="flex items-center space-x-4 flex-wrap">
@@ -68,21 +67,17 @@
                     <div class="flex items-start lg:flex-row flex-col">
                         <div
                             class=" lg:w-[200px] w-full lg:space-y-2 lg:space-x-0 space-x-3 flex lg:flex-col flex-row ">
-                            <a href="security.html"
-                                class="text-blue-700 text-sm font-semibold  leading-7">Integration</a>
-                            <a href="sso.html" class="text-black text-sm font-semibold  leading-7">Single Sign On</a>
+                            <a href="security.html" class="text-black text-sm font-semibold  leading-7">Integration</a>
+                            <a href="sso.html" class="text-blue-700 text-sm font-semibold  leading-7">Single Sign On</a>
                             <a href="log.html" class="text-black text-sm font-semibold  leading-7">Audit Log</a>
                         </div>
                         <div class="w-full border p-3 rounded-xl">
-                            <div class="flex items-center justify-between md:flex-row flex-col">
-                                <h2 class="text-black text-sm font-medium  leading-[38px]">Integrate Bylt Pay with the
-                                    products
-                                    and services we use every day.</h2>
+                            <div class="flex items-center justify-end">
                                 <div id="show_payment_model"
                                     class="flex items-center justify-end space-x-3 cursor-pointer">
                                     <img src="/images/icons/ic_plus.svg" alt="">
                                     <h3 class=" text-blue-700 text-base font-bold  leading-normal tracking-tight">Add
-                                        Integration</h3>
+                                        SSO</h3>
                                 </div>
                             </div>
                             <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
@@ -93,7 +88,7 @@
                                                 <div class="flex items-center justify-between">
                                                     <h1
                                                         class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                        Integration name</h1>
+                                                        Configuration name</h1>
                                                     <img src="/images/icons/table/filter_up-down.svg" alt="">
                                                 </div>
                                             </th>
@@ -109,7 +104,7 @@
                                                 <div class="flex items-center justify-between">
                                                     <h1
                                                         class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                        Owner</h1>
+                                                        Users</h1>
                                                     <img src="/images/icons/table/filter_up-down.svg" alt="">
                                                 </div>
                                             </th>
@@ -130,7 +125,7 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                Docusign</h1>
+                                                                Google SSO</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -164,7 +159,7 @@
                                                         <div class="">
                                                             <h1
                                                                 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                Docusign</h1>
+                                                                Okta SSO</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -173,7 +168,7 @@
                                                 <div class="">
                                                     <h1
                                                         class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                        SAML</h1>
+                                                        JSON Web Token</h1>
                                                 </div>
                                             </td>
                                             <td class=" border-gray-300 py-3">
@@ -213,7 +208,114 @@
             </div>
             <!-- footer -->
             <div id="footer"></div>
-        
+            <div id="payment_model" class="fixed bg-[#0000008e] top-0 left-0 w-full h-screen "
+                style="z-index: 9999;">
+                <div class="fixed bg-white md:w-[700px] w-[350px]  top-0 right-0 h-screen  overflow-y-scroll">
+                    <div class="my-10 flex items-center justify-between px-3">
+                        <div id="our_model_hide" class="cursor-pointer">
+                            <img src="/images/icons/ic_back_arrow.svg" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-black text-base font-semibold  leading-7">Configure Single Sign On</h1>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="my-2">
+                                <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                    <span>Configuration Type</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <select name="" id=""
+                                    class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value="">SAML</option>
+                                    <option value="">JSON Web Token</option>
+                                </select>
+                            </div>
+                            <div class="my-2">
+                                <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                    <span>Status</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <select name="" id=""
+                                    class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value="">Active</option>
+                                    <option value="">Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-black text-sm font-medium   leading-[38px]">Security Assertion Markup Language
+                            (SAML) is an open standard for exchanging credentials and user information <br />with an
+                            identity provider.</div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="my-2">
+                                <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                    <span>Configuration name</span>
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <select name="" id=""
+                                    class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Remote Login URL</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">This is the
+                                URL that ByltPay will invoke to redirect users to your identity provider.</div>
+                            <input type="text"
+                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                        </div>
+
+                        <div class="my-5">
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Remote Login URL</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">This is the
+                                URL that ByltPay will invoke to redirect users to your identity provider.</div>
+                            <input type="text"
+                                class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
+                        </div>
+                        <div>
+                            <label for="" class="text-black-primary font-inter text-base font-normal leading-snug">
+                                <span>Shared secret</span>
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <div class="text-black text-opacity-70 text-[13px] font-medium  leading-[38px]">If you
+                                activate remote authentication, be sure to copy this token first as it will not be
+                                displayed in full again. You will be able to reset it at a later time. The token is a
+                                shared secret between you and Zendesk. It must never be publicized.</div>
+                            <div class="flex items-center">
+                                <input type="text"
+                                    class="mt-3 w-[500px] outline-none border border-gray-300 py-3 px-4 rounded-l-md">
+                                <button class="bg-gray-200 py-3 px-7 mt-3 rounded-r-md">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center flex-col justify-center mt-10">
+                        <a href="">
+                            <button
+                                class="rounded-2xl bg-[#000032] py-3 px-10 text-white text-[18px] font-bold leading-[24px]"
+                                style="box-shadow: 0px 4px 16px 0px #B3C0E7;">Edit</button>
+                        </a>
+                        <button
+                            class="text-red-600 text-center block font-inter text-lg font-bold leading-6 xl:leading-7 mt-5">Cancel</button>
+                    </div>
+                </div>
+
+
+            </div>
     </main>
 
     <script src="/js/script.js"></script>

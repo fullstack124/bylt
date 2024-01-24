@@ -1,4 +1,37 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
+
+    const sidebar_nav = await fetch('/src/components/sidebar.html');
+    const footer = await fetch('/src/components/footer.html');
+    const header = await fetch('/src/components/header.html');
+    document.getElementById('sidebar_nav').innerHTML = await sidebar_nav.text();
+    try {
+        document.getElementById('footer').innerHTML = await footer.text();
+        document.getElementById('header').innerHTML = await header.text();
+    } catch (e) {
+    }
+    const sidebarItems = document.querySelectorAll('#sidebar li');
+
+    sidebarItems.forEach(item => {
+        // Example: Add a click event listener to each item
+        item.addEventListener('click', function () {
+
+            // Your logic here for each item click
+            sidebarItems.forEach(otherItem => {
+                otherItem.classList.remove('active-navitems');
+            });
+            sessionStorage.setItem('activeNavItem', item.id);
+            item.classList.add('active-navitems');
+
+            // Add the 'active-navitems' class to the clicked item
+            console.log('Clicked on:', item.id);
+        });
+    });
+    const activeNavItem = sessionStorage.getItem('activeNavItem');
+    console.log('Clicked on:', activeNavItem);
+    if (activeNavItem) {
+        // Apply 'active-navitems' class to the stored item
+        document.getElementById(activeNavItem).classList.add('active-navitems');
+    }
     /**
      * SideBar
      */
@@ -10,21 +43,23 @@ document.addEventListener('DOMContentLoaded', function () {
     sidebar.addEventListener('touchstart', handleTouchStart, false);
     sidebar.addEventListener('touchmove', handleTouchMove, false);
 
-    show_sidebar.addEventListener('click', function () {
-        sidebar.classList.remove('hidden');
+    if (show_sidebar)
+        show_sidebar.addEventListener('click', function () {
+            sidebar.classList.remove('hidden');
 
-        sidebar.classList.add('block', 'slide-in');
-    });
+            sidebar.classList.add('block', 'slide-in');
+        });
 
-    closed_sidebar.addEventListener('click', function () {
-        sidebar.classList.remove('slide-in');
-        sidebar.classList.add('slide-out');
-        // Delay hiding the sidebar to allow the animation to complete
-        setTimeout(() => {
-            sidebar.classList.add('hidden');
-            sidebar.classList.remove('block', 'slide-out');
-        }, 300); // Adjust the duration based on your CSS transition duration
-    });
+    if (closed_sidebar)
+        closed_sidebar.addEventListener('click', function () {
+            sidebar.classList.remove('slide-in');
+            sidebar.classList.add('slide-out');
+            // Delay hiding the sidebar to allow the animation to complete
+            setTimeout(() => {
+                sidebar.classList.add('hidden');
+                sidebar.classList.remove('block', 'slide-out');
+            }, 300); // Adjust the duration based on your CSS transition duration
+        });
 
     function handleTouchStart(event) {
         touchStartX = event.touches[0].clientX;
@@ -119,19 +154,20 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-    value_dropdown.addEventListener('change', function () {
-        if (document.getElementById('debit-card').getAttribute('id') === value_dropdown.value) {
-            document.getElementById('our_billing').classList.add('grid');
-            document.getElementById('our_billing').classList.remove('hidden');
-            document.getElementById('our_financial').classList.add('hidden');
-            document.getElementById('our_financial').classList.remove('grid');
-        } else {
-            document.getElementById('our_billing').classList.add('hidden');
-            document.getElementById('our_billing').classList.remove('grid');
-            document.getElementById('our_financial').classList.add('grid');
-            document.getElementById('our_financial').classList.remove('hidden');
-        }
-    });
+    if (value_dropdown)
+        value_dropdown.addEventListener('change', function () {
+            if (document.getElementById('debit-card').getAttribute('id') === value_dropdown.value) {
+                document.getElementById('our_billing').classList.add('grid');
+                document.getElementById('our_billing').classList.remove('hidden');
+                document.getElementById('our_financial').classList.add('hidden');
+                document.getElementById('our_financial').classList.remove('grid');
+            } else {
+                document.getElementById('our_billing').classList.add('hidden');
+                document.getElementById('our_billing').classList.remove('grid');
+                document.getElementById('our_financial').classList.add('grid');
+                document.getElementById('our_financial').classList.remove('hidden');
+            }
+        });
     /**
     * Loan Screen
     * (All Status) Drop Down

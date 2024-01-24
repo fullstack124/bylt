@@ -20,6 +20,7 @@
             <div>
                 <!-- header -->
                 <div id="header"></div>
+
                 <div class="h-[0.84px] bg-slate-200"></div>
                 <div class="bg-white container mx-auto px-5  ">
                     <div class="flex items-center space-x-4 flex-wrap">
@@ -49,111 +50,135 @@
                                 <img src="/images/icons/ic_lock.svg" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Roles & Permission</h2>
                             </a>
-                            <div class="w-[185px] h-[3px] bg-blue-600"></div>
+                            <!-- <div class="w-[185px] h-[3px] bg-blue-600"></div> -->
                         </div>
                         <div>
                             <a href="security.html" class="flex items-center space-x-2 py-5">
                                 <img src="/images/icons/ic_recycle_circle.svg" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Security & Integration</h2>
                             </a>
-                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                            <div class="w-[220px] h-[3px] bg-blue-600"></div>
                         </div>
 
                     </div>
                 </div>
                 <div class="h-[0.84px] bg-slate-200"></div>
                 <div class="container mx-auto sm:px-7 px-4 pt-8 bg-white">
-                    <div id="show_payment_model" class="flex items-center justify-end space-x-3 cursor-pointer">
-                        <img src="/images/icons/ic_plus.svg" alt="">
-                        <h3 class=" text-blue-700 text-base font-bold font-['Inter'] leading-normal tracking-tight">Add
-                            Role</h3>
-                    </div>
-                    <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
-                        <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
-                            <thead class="py-2 px-3    bg-[#F5F7FA]">
-                                <tr class="text-center pb-4">
-                                    <th class="py-4 text-center">
-                                        <div class="flex items-center justify-between ">
-                                            <div class="flex items-center space-x-3 pl-3">
-                                                <h1
-                                                    class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                    Role</h1>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <th class="py-4 text-left px-3">
-                                        <div class="flex items-center justify-between">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                User</h1>
-                                            <img src="/images/icons/table/filter_up-down.svg" alt="">
-                                        </div>
-                                    </th>
-                                    <th class="py-4 text-left">
-                                        <div class="flex items-center justify-between">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                Active</h1>
-                                            <img src="/images/icons/table/filter_up-down.svg" alt="">
-                                        </div>
-                                    </th>
-                                    <th class="py-4 px-6 text-center ">
-                                        <div class="flex items-center justify-around ">
-                                            <h1
-                                                class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                Status</h1>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b " style="border-radius: 14px !important;">
-                                    <td class="px-3 py-4 ">
-                                        <div class="flex items-center">
-                                            <div class="flex items-center space-x-3">
+
+                    <div class="flex items-start lg:flex-row flex-col">
+                        <div
+                            class=" lg:w-[200px] w-full lg:space-y-2 lg:space-x-0 space-x-3 flex lg:flex-col flex-row ">
+                            <a href="security.html" class="text-black text-sm font-semibold  leading-7">Integration</a>
+                            <a href="sso.html" class="text-black text-sm font-semibold  leading-7">Single Sign On</a>
+                            <a href="log.html" class="text-blue-700 text-sm font-semibold  leading-7">Audit Log</a>
+                        </div>
+                        <div class="w-full border p-3 rounded-xl">
+                            <div class="overflow-x-auto bg-white rounded-lg  overflow-y-auto relative mt-[17px]">
+                                <table class=" table-auto lg:w-full w-[1000px] whitespace-no-wrap bg-white  relative">
+                                    <thead class="py-2 px-3    bg-[#F5F7FA]">
+                                        <tr class="text-center pb-4">
+                                            <th class="py-4 text-left px-3">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Time</h1>
+                                                    <img src="/images/icons/table/filter_up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 text-left">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Actor</h1>
+                                                    <img src="/images/icons/table/filter_up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 text-left">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Item</h1>
+                                                    <img src="/images/icons/table/filter_up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 text-left">
+                                                <div class="flex items-center justify-between">
+                                                    <h1
+                                                        class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
+                                                        Activity Type</h1>
+                                                    <img src="/images/icons/table/filter_up-down.svg" alt="">
+                                                </div>
+                                            </th>
+                                            <th class="py-4 px-6 text-left ">
+                                                <h1 class="text-[#687588]  text-[13px] font-medium leading-[19.2px]">
+                                                    Activity Description</h1>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b " style="border-radius: 14px !important;">
+                                            <td class="px-3 py-4 ">
+                                                <div class="flex items-center">
+                                                    <div class="flex items-center space-x-3">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Dec 12, 2024 8:30AM</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
                                                 <div class="">
                                                     <h1
                                                         class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                        Admin</h1>
+                                                        Andrea Plummer</h1>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class=" border-gray-300">
-                                        <div class="">
-                                            <h1 class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                10</h1>
-                                        </div>
-                                    </td>
-                                    <td class=" border-gray-300">
-                                        <img src="/images/icons/ic_toogle_btn.svg"" alt="">
-                                    </td>
-                                    <td class=" border-gray-300">
-                                        <div class="flex items-center space-x-3 justify-center ">
-                                            <a href="new_overview.html">
-                                                <img src="/images/icons/table/action_button/ic_edit_box.svg" alt="">
-                                            </a>
-                                            <a href="new_overview.html">
-                                                <img src="/images/icons/table/action_button/ic_delete_box.svg" alt="">
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="">
+                                                    <h1
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        User: Updated</h1>
+                                                </div>
+                                            </td>
+                                            <td class=" border-gray-300 py-3">
+                                                <div class="flex items-center space-x-3 justify-center ">
+                                                    <button
+                                                        class="py-1 px-4 text-gray-700 bg-gray-700 bg-opacity-10 rounded-lg">Active</button>
+                                                    <img src="/images/icons/ic_dropdown.svg" alt="">
+                                                </div>
+                                            </td>
+
+                                            <td class=" border-gray-300 py-3 px-5">
+                                                <div class="">
+                                                    <h1
+                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                        Updated user role to Manager</h1>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+
+
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+
 
                 </div>
             </div>
+
             <!-- footer -->
             <div id="footer"></div>
             <div id="payment_model" class="fixed bg-[#0000008e] top-0 left-0 w-full h-screen hidden "
