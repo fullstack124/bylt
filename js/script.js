@@ -209,4 +209,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
 
+
+    const change_security=document.getElementById('change_security');
+    const jsonwebtoken=document.getElementById('jsonwebtoken');
+
+    change_security.addEventListener('change',function(){
+        if(change_security.value == 'jwt'){
+            jsonwebtoken.classList.add('block')
+            jsonwebtoken.classList.remove('hidden')
+        }else{
+            jsonwebtoken.classList.remove('block')
+            jsonwebtoken.classList.add('hidden')
+        }
+    })
+
 });
