@@ -210,17 +210,30 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
 
-    const change_security=document.getElementById('change_security');
-    const jsonwebtoken=document.getElementById('jsonwebtoken');
+    const change_security = document.getElementById('change_security');
+    const samlConfiguration = document.querySelectorAll('.samlConfiguration');
+    const jsonwebtoken = document.querySelectorAll('.jsonwebtoken');
 
-    change_security.addEventListener('change',function(){
-        if(change_security.value == 'jwt'){
-            jsonwebtoken.classList.add('block')
-            jsonwebtoken.classList.remove('hidden')
-        }else{
-            jsonwebtoken.classList.remove('block')
-            jsonwebtoken.classList.add('hidden')
-        }
-    })
+    if (change_security)
+        change_security.addEventListener('change', function () {
+            if (change_security.value == 'jwt') {
+
+                samlConfiguration.forEach((element) => {
+                    element.classList.add('hidden');
+                });
+
+                jsonwebtoken.forEach((element) => {
+                    element.classList.remove('hidden');
+                });
+            } else {
+                jsonwebtoken.forEach((element) => {
+                    element.classList.add('hidden');
+                });
+                samlConfiguration.forEach((element) => {
+                    element.classList.remove('hidden');
+                });
+
+            }
+        })
 
 });

@@ -2560,3 +2560,39 @@ video {
     line-height: 1.75rem;
   }
 }
+
+
+
+/* Own Style */
+
+
+.active-navitems svg path {
+  stroke: #FB6039 !important;
+}
+.active-navitems  span {
+  color: #FB6039 !important;
+}
+
+
+.navitems svg path {
+  stroke: #FFF;
+}
+
+.navitems:hover .group svg path {
+  stroke: #FB6039;
+}
+
+
+/* CSS */
+#sidebar {
+  /* Your existing styles for the sidebar */
+  transition: transform 0.3s ease; /* Adjust the duration based on your preference */
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+.slide-out {
+  transform: translateX(-100%);
+}
