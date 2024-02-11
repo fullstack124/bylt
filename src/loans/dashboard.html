@@ -10,6 +10,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .no-icon::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -79,41 +84,62 @@
                                     class="absolute top-12 right-0 w-[250px] z-10 hidden">
                                     <div class="border rounded-md w-full bg-white shadow-md">
                                         <ul>
-                                            <li
-                                                class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                            <li class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer"
+                                                style="background-color: #e9eaec79;">
                                                 <div
-                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
-                                                    Past 30 Days</div>
+                                                    class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight flex justify-between">
+                                                    <span>Past 30 Days</span>
+                                                    <span>
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                            class="mt-1" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2.5 6L5 8.5L10 3.5" stroke="#0D0D12"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </span>
+
+                                                </div>
                                             </li>
                                             <li
                                                 class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                 <div
-                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                     Past 90 Days</div>
                                             </li>
                                             <li
                                                 class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                 <div
-                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                     2022</div>
                                             </li>
                                             <li
                                                 class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                 <div
-                                                    class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                    class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                     2023</div>
                                             </li>
-                                            <li
-                                                class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
-                                                <input type="date"
-                                                    class="w-full bg-transparent outline-none border-none">
+                                            <li class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer flex justify-between"">
+                                                <input type=" date" value="2023-02-10"
+                                                class="w-full bg-transparent outline-none border-none no-icon">
+                                                <img src="/images/icons/ic_date.svg" alt="">
                                             </li>
                                             <li
-                                                class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
-                                                <input type="date"
-                                                    class="w-full bg-transparent outline-none border-none">
+                                                class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer flex justify-between">
+                                                <input type="date" value="2023-02-10"
+                                                    class="w-full bg-transparent outline-none border-none no-icon">
+                                                <img src="/images/icons/ic_date.svg" alt="">
+                                            </li>
+
+                                            <li>
+                                                <button type="button" class="btn btn-primary my-2 py-2 mx-2 px-3"
+                                                    style="width: 94%; color: white;background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.00) 100%), #5F38CA; box-shadow: 1px 2px 4px 0px rgba(13, 13, 18, 0.12); border-radius: 8px;">
+                                                    Apply
+                                                </button>
                                             </li>
                                         </ul>
+
+
+
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +187,7 @@
                                             <div class="flex items-center justify-between">
                                                 <h1
                                                     class="text-[#687588]  flex items-center justify-center text-[13px] font-medium leading-[19.2px]">
-                                                    Payment Date</h1>
+                                                    Loan Date</h1>
                                                 <img src="/images/icons/table/filter_up-down.svg" alt="">
                                             </div>
                                         </th>
@@ -233,8 +259,8 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button
-                                                    class="text-[#1AAF5D] py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">Active</button>
+                                                <button style="width: 100px;"
+                                                    class="text-[#1AAF5D] py-1 rounded-lg bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">Active</button>
 
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
@@ -301,9 +327,9 @@
                                             </div>
                                         </td>
                                         <td class=" border-gray-300">
-                                            <div class="flex items-center justify-center ">
-                                                <button style="color: #004EE4;background-color: #DFEAFF;"
-                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">In
+                                            <div class="flex items-center justify-center">
+                                                <button style="color: #004EE4;background-color: #DFEAFF; width: 100px;"
+                                                    class=" py-1 rounded-lg bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">In
                                                     Review</button>
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
@@ -372,8 +398,8 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button style="color: #004EE4;background-color: #DFEAFF;"
-                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">PRE-APPROVED</button>
+                                                <button style="color: #004EE4;background-color: #DFEAFF; width: 100px;"
+                                                    class=" py-1 rounded-lg bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">PRE-APPROVED</button>
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
                                         </td>
@@ -442,8 +468,8 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <button
-                                                    style="color: #2D3748;background-color: rgba(45, 55, 72, 0.10);;"
-                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">CANCELED</button>
+                                                    style="color: #2D3748;background-color: rgba(45, 55, 72, 0.10);width: 100px;"
+                                                    class=" py-1 rounded-lg  bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">CANCELED</button>
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
                                         </td>
@@ -512,8 +538,8 @@
                                         </td>
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
-                                                <button style="color: #EB001B;background-color: #FFEBEE;"
-                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">DENIED</button>
+                                                <button style="color: #EB001B;background-color: #FFEBEE;width: 100px;"
+                                                    class=" py-1 rounded-lg bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">DENIED</button>
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
                                         </td>
@@ -582,8 +608,8 @@
                                         <td class=" border-gray-300">
                                             <div class="flex items-center justify-center ">
                                                 <button
-                                                    style="color: #FB6039;background-color: rgba(251, 96, 57, 0.10);"
-                                                    class=" py-1 rounded-lg px-6 bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">TRANSFER</button>
+                                                    style="color: #FB6039;background-color: rgba(251, 96, 57, 0.10);width: 100px;"
+                                                    class=" py-1 rounded-lg bg-[#cfe7ca] flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">TRANSFER</button>
                                                 <img src="/images/icons/ic_dropdown.svg" class="pl-4" alt="">
                                             </div>
                                         </td>

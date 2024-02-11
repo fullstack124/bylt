@@ -10,6 +10,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .no-icon::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +32,7 @@
                             <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">Reports</h1>
                         </div>
                     </div> -->
-                    <div class="mt-[38px]">
+                    <div class="">
                         <div class="lg:flex block  gap-6 ">
                             <!-- <div class="hidden md:w-1/3 w-full rounded-xl bg-white py-10 h-1/2">
                                 <a class="flex items-center mx-6 rounded-lg px-4 py-6 hover:bg-gray-50">
@@ -51,9 +56,10 @@
                                 <div
                                     class="flex md:flex-row flex-col md:space-y-0 space-y-3 items-center justify-between ">
                                     <!-- <h1 class="text-[20px] font-bold">Purpose</h1> -->
-                                    <div class="flex items-center space-x-6 flex-wrap">
+                                    <div class="flex items-center space-x-6 flex-wrap "
+                                        style="width: 70% !important; border-bottom: 1px solid #E6EFF5;">
                                         <div>
-                                            <div class="flex items-center space-x-2 py-2 justify-center">
+                                            <div class="flex items-center space-x-2 justify-center">
                                                 <img src="/images/icons/ic_user.svg" alt="">
                                                 <h1 class="text-black text-base font-medium   leading-normal">
                                                     Customers</h1>
@@ -82,13 +88,13 @@
                                     </div>
                                     <a href="#">
                                         <button
-                                            class="rounded-[10px] bg-[#000032] py-2 px-10 justify-around flex items-center text-white text-[14px] font-bold leading-[29.33px]"
+                                            class="rounded-md bg-[#000032] py-2 px-4 justify-around flex items-center text-white text-[14px] font-bold leading-[29.33px]"
                                             style="box-shadow: 0px 4px 16px 0px #B3C0E7;"> <img
                                                 src="/images/icons/ic_upload_doc.svg" alt=""><span class="ml-4">Download
                                                 Data</span></button>
                                     </a>
+
                                 </div>
-                                <hr>
                                 <div class="mt-[24px] ">
                                     <div class="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1  gap-4">
                                         <div class="sm:col-span-2 ">
@@ -144,41 +150,64 @@
                                                 class="absolute top-12 right-0 w-[250px] z-10 hidden">
                                                 <div class="border rounded-md w-full bg-white shadow-md">
                                                     <ul>
-                                                        <li
-                                                            class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
+                                                        <li class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer"
+                                                            style="background-color: #e9eaec79;">
                                                             <div
-                                                                class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
-                                                                Past 30 Days</div>
+                                                                class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight flex justify-between">
+                                                                <span>Past 30 Days</span>
+                                                                <span>
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                        fill="none" class="mt-1"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.5 6L5 8.5L10 3.5" stroke="#0D0D12"
+                                                                            stroke-width="1.5" stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+                                                                </span>
+
+                                                            </div>
                                                         </li>
                                                         <li
                                                             class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                             <div
-                                                                class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                                class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                                 Past 90 Days</div>
                                                         </li>
                                                         <li
                                                             class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                             <div
-                                                                class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                                class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                                 2022</div>
                                                         </li>
                                                         <li
                                                             class="my-2 py-2 mx-2 px-3 rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
                                                             <div
-                                                                class="text-zinc-950 text-xs font-medium  leading-[18px] tracking-tight">
+                                                                class="text-zinc-950 text-sm font-medium  leading-[18px] tracking-tight">
                                                                 2023</div>
                                                         </li>
-                                                        <li
-                                                            class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
-                                                            <input type="date"
-                                                                class="w-full bg-transparent outline-none border-none">
+                                                        <li class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer flex justify-between"">
+                                                <input type=" date" value="2023-02-10"
+                                                            class="w-full bg-transparent outline-none border-none no-icon">
+                                                            <img src="/images/icons/ic_date.svg" alt="">
                                                         </li>
                                                         <li
-                                                            class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer">
-                                                            <input type="date"
-                                                                class="w-full bg-transparent outline-none border-none">
+                                                            class="my-2 py-2 mx-2 px-3 border rounded-md hover:bg-gray-100 text-zinc-950 cursor-pointer flex justify-between">
+                                                            <input type="date" value="2023-02-10"
+                                                                class="w-full bg-transparent outline-none border-none no-icon">
+                                                            <img src="/images/icons/ic_date.svg" alt="">
+                                                        </li>
+
+                                                        <li>
+                                                            <button type="button"
+                                                                class="btn btn-primary my-2 py-2 mx-2 px-3"
+                                                                style="width: 94%; color: white;background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.00) 100%), #5F38CA; box-shadow: 1px 2px 4px 0px rgba(13, 13, 18, 0.12); border-radius: 8px;">
+                                                                Apply
+                                                            </button>
                                                         </li>
                                                     </ul>
+
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -304,8 +333,9 @@
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="flex items-center justify-center ">
-                                                            <button style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
+                                                            <button
+                                                                style="color: #009B75;background-color: #E6F5F1; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">VERIFIED</button>
                                                             <img src="/images/icons/ic_dropdown.svg" class="pl-4"
                                                                 alt="">
                                                         </div>
@@ -366,71 +396,9 @@
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="flex items-center justify-center ">
-                                                            <button style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
-                                                            <img src="/images/icons/ic_dropdown.svg" class="pl-4"
-                                                                alt="">
-                                                        </div>
-                                                    </td>
-
-                                                </tr>
-
-                                                <tr class="border-b " style="border-radius: 14px !important;">
-                                                    <td class="px-3 py-4 ">
-                                                        <div class="flex items-center">
-                                                            <div class="flex items-center space-x-3">
-                                                                <input type="checkbox" name="" class="px-3" id="">
-                                                                <div class="rounded-full ">
-                                                                    <img src="/images/png/profile_pic.png"
-                                                                        class="h-6 w-6 rounded-full" alt="">
-                                                                </div>
-                                                                <div class="ml-[12px]">
-                                                                    <h1
-                                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                        Jonathan Brown</h1>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="">
-                                                            <h1
-                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                jann@test.com</h1>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="">
-                                                            <h1
-                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                123-456-7890</h1>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="">
-                                                            <h1
-                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                St.Ann</h1>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="">
-                                                            <h1
-                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                BYL25698541</h1>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="">
-                                                            <h1
-                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
-                                                                Jan 3, 2022</h1>
-                                                        </div>
-                                                    </td>
-                                                    <td class=" border-gray-300">
-                                                        <div class="flex items-center justify-center ">
-                                                            <button style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
+                                                            <button
+                                                                style="color: #009B75;background-color: #E6F5F1; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">VERIFIED</button>
                                                             <img src="/images/icons/ic_dropdown.svg" class="pl-4"
                                                                 alt="">
                                                         </div>
@@ -492,8 +460,9 @@
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="flex items-center justify-center ">
-                                                            <button style="color: #009B75;background-color: #E6F5F1;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">VERIFIED</button>
+                                                            <button
+                                                                style="color: #009B75;background-color: #E6F5F1; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">VERIFIED</button>
                                                             <img src="/images/icons/ic_dropdown.svg" class="pl-4"
                                                                 alt="">
                                                         </div>
@@ -555,8 +524,9 @@
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="flex items-center justify-center ">
-                                                            <button style="color: #EB001B;background-color: #FFEBEE;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">UNVERIFIED</button>
+                                                            <button
+                                                                style="color: #009B75;background-color: #E6F5F1; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">VERIFIED</button>
                                                             <img src="/images/icons/ic_dropdown.svg" class="pl-4"
                                                                 alt="">
                                                         </div>
@@ -618,8 +588,73 @@
                                                     </td>
                                                     <td class=" border-gray-300">
                                                         <div class="flex items-center justify-center ">
-                                                            <button style="color: #EB001B;background-color: #FFEBEE;"
-                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-semibold leading-[19px] ">UNVERIFIED</button>
+                                                            <button
+                                                                style="color: #EB001B;background-color: #FFEBEE; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">UNVERIFIED</button>
+                                                            <img src="/images/icons/ic_dropdown.svg" class="pl-4"
+                                                                alt="">
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr class="border-b " style="border-radius: 14px !important;">
+                                                    <td class="px-3 py-4 ">
+                                                        <div class="flex items-center">
+                                                            <div class="flex items-center space-x-3">
+                                                                <input type="checkbox" name="" class="px-3" id="">
+                                                                <div class="rounded-full ">
+                                                                    <img src="/images/png/profile_pic.png"
+                                                                        class="h-6 w-6 rounded-full" alt="">
+                                                                </div>
+                                                                <div class="ml-[12px]">
+                                                                    <h1
+                                                                        class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                        Jonathan Brown</h1>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                jann@test.com</h1>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                123-456-7890</h1>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                St.Ann</h1>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                BYL25698541</h1>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="">
+                                                            <h1
+                                                                class="text-[#000] text-[14px] not-italic font-normal leading-[19px] ">
+                                                                Jan 3, 2022</h1>
+                                                        </div>
+                                                    </td>
+                                                    <td class=" border-gray-300">
+                                                        <div class="flex items-center justify-center ">
+                                                            <button
+                                                                style="color: #EB001B;background-color: #FFEBEE; width: 100px;"
+                                                                class=" py-1 rounded-lg px-6  flex items-center justify-center text-[12px] not-italic font-extrabold leading-[19px] ">UNVERIFIED</button>
                                                             <img src="/images/icons/ic_dropdown.svg" class="pl-4"
                                                                 alt="">
                                                         </div>

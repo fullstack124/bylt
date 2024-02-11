@@ -10,7 +10,35 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
+    <style>
+        .high_light_bg {
+            background-color: rgba(0, 0, 0, 0.04);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #E9EAEC;
+        }
 
+        .high_light_bg_white {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #E9EAEC;
+            border-radius: 8px;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .high_light_bg input {
+            background-color: transparent;
+        }
+
+
+        .high_light_bg select {
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +49,7 @@
             <div>
                 <!-- header -->
                 <div id="header"></div>
-                <div class="flex items-start w-full py-3">
+                <div class="flex items-start w-full border">
                     <!-- side profile nav -->
                     <div class="w-[323px]  lg:block hidden  rounded-r-3xl bg-stone-50">
                         <div class="w-[307px] rounded-r-3xl bg-white">
@@ -104,14 +132,14 @@
                         </div>
                     </div>
 
-                    <div class="w-[33px] min-h-screen h-[900px] rounded-r-3xl bg-stone-50">
+                    <div class="min-h-screen h-[900px] rounded-r-3xl bg-stone-50" style="width: 15px;">
                     </div>
 
                     <div class="px-4 py-3 w-full  ml-2">
                         <div class="w-full">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center space-x-6 flex-wrap">
-                                    <div class="ml-6">
+                                    <div class="">
                                         <a href="personal-info.html" class="flex items-center space-x-2 py-2">
                                             <img src="/images/icons/ic_user.svg" alt="">
                                             <h1 class="text-black text-base font-medium   leading-normal">Personal Info
@@ -141,7 +169,7 @@
                                         <!-- <div class="w-[150px] h-[3px] bg-blue-600"></div> -->
                                     </div>
                                     <div>
-                                        <a href="setting.html" class="flex items-center space-x-2 py-2">
+                                        <a href="setting.html" class="flex items-center space-x-2 py-2 justify-center">
                                             <img src="/images/icons/ic_lock.svg" alt="">
                                             <h1 class="text-black text-base font-medium   leading-normal">Settings</h1>
                                         </a>
@@ -158,7 +186,7 @@
                                 <div class=" w-full">
                                     <div class="bg-neutral-50 rounded-2xl w-full">
                                         <div
-                                            class="flex items-center justify-between py-5 px-6 bg-neutral-50 rounded-2xl">
+                                            class="flex items-center justify-between py-2 px-6 bg-neutral-50 rounded-2xl">
                                             <div class="text-black text-base font-semibold  leading-normal">Account
                                                 Settings</div>
                                             <div class="">
@@ -175,9 +203,10 @@
                                             <div class="my-5">
                                                 <label for="" class="text-[17px]"> Account Status<span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg"
+                                                    style="width: 400px !important;">
                                                     <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
+                                                        class="outline-none w-full  text-gray-900 text-lg">
                                                         <option value="1">Verified </option>
                                                         <option value="1">Unverified</option>
                                                     </select>
@@ -190,9 +219,9 @@
                                         <div
                                             class="flex items-center md:space-x-3 space-x-0 space-y-3 md:space-y-0 flex-col md:flex-row">
                                             <div>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input disabled placeholder="Reset Password" type="text" name="" id=""
-                                                        class="form_input">
+                                                <div class="input_border_user my-2 ">
+                                                    <input disabled placeholder="Reset Password" type="text" name=""
+                                                        id="" class="form_input bg-transparent">
                                                 </div>
                                             </div>
                                             <div class="text-black text-base font-semibold   leading-[21px]">Send

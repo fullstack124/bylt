@@ -11,6 +11,40 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
+    <style>
+        .high_light_bg {
+            background-color: rgba(0, 0, 0, 0.04);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #E9EAEC;
+        }
+
+        .high_light_bg_white {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #E9EAEC;
+            border-radius: 8px;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .high_light_bg input {
+            background-color: transparent;
+        }
+
+
+
+        .high_light_bg select {
+            background-color: transparent;
+        }
+
+        .no-icon::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +57,7 @@
                 <!-- header -->
                 <div id="header"></div>
 
-                <div class="flex items-start w-full py-3">
+                <div class="flex items-start w-full  border">
                     <!-- side profile nav -->
                     <div class="w-[323px]  lg:block hidden  rounded-r-3xl bg-stone-50">
                         <div class="w-[307px] rounded-r-3xl bg-white">
@@ -106,14 +140,14 @@
                         </div>
                     </div>
 
-                    <div class="w-[33px] min-h-screen h-[900px] rounded-r-3xl bg-stone-50">
+                    <div class="min-h-screen h-[900px] rounded-r-3xl bg-stone-50" style="width: 15px;">
                     </div>
 
-                    <div class="px-4 py-3 w-full  ml-2">
+                    <div class="px-4 w-full py-2 ml-2">
                         <div class="w-full">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center space-x-6 flex-wrap">
-                                    <div class="ml-6">
+                                    <div class="">
                                         <a href="personal-info.html" class="flex items-center space-x-2 py-2">
                                             <img src="/images/icons/ic_user.svg" alt="">
                                             <h1 class="text-black text-base font-medium   leading-normal">Personal Info
@@ -186,29 +220,32 @@
                                             <div>
                                                 <label for="" class="text-[17px]">First Name <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">Last Name <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">TRN Number <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">Date of Birth<span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
-                                                    <input type="date" name="" id="" class="form_input">
+                                                <div
+                                                    class="input_border_user my-2 high_light_bg_white flex justify-between">
+                                                    <input type="date" name="" id="" class="form_input w-full no-icon">
+                                                    <img src="/images/icons/ic_date.svg" alt="">
+
                                                 </div>
                                             </div>
                                             <div>
@@ -216,7 +253,7 @@
                                                         class="text-red-600">*</span></label>
                                                 <div class="input_border_user my-2 high_light_bg">
                                                     <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
+                                                        class="outline-none w-full  text-gray-900 text-lg">
                                                         <option value="1">Married</option>
                                                         <option value="1">Unmarried</option>
                                                     </select>
@@ -227,7 +264,7 @@
                                                         class="text-red-600">*</span></label>
                                                 <div class="input_border_user my-2 high_light_bg">
                                                     <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
+                                                        class="outline-none w-full  text-gray-900 text-lg">
                                                         <option value="1">Male</option>
                                                         <option value="1">Female</option>
                                                     </select>
@@ -236,7 +273,7 @@
                                             <div>
                                                 <label for="" class="text-[17px]">No of Dependent<span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
@@ -253,21 +290,21 @@
                                             <div>
                                                 <label for="" class="text-[17px]">Employer <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">Length of Employment <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">Income <span
                                                         class="text-red-600">*</span></label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
@@ -276,21 +313,21 @@
                                                         class="text-red-600">*</span></label>
                                                 <div class="input_border_user my-2 high_light_bg">
                                                     <select name="" id=""
-                                                        class="outline-none w-full py-1 text-gray-900 text-lg">
+                                                        class="outline-none w-full  text-gray-900 text-lg">
                                                         <option value="1">Married</option>
                                                         <option value="1">Unmarried</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div>
-                                                <label for="" class="text-[17px]">Emplo yer email </label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <label for="" class="text-[17px]">Employer email </label>
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <label for="" class="text-[17px]">Employer number </label>
-                                                <div class="input_border_user my-2 high_light_bg">
+                                                <div class="input_border_user my-2 high_light_bg_white">
                                                     <input type="text" name="" id="" class="form_input">
                                                 </div>
                                             </div>
@@ -302,8 +339,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- footer -->
                 <div id="footer"></div>

@@ -11,19 +11,36 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
     <style>
         .high_light_bg {
             background-color: rgba(0, 0, 0, 0.04);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #E9EAEC;
+        }
+
+        .high_light_bg_white {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #E9EAEC;
+            border-radius: 8px;
+        }
+
+        input {
+            outline: none;
         }
 
         .high_light_bg input {
             background-color: transparent;
         }
 
+
         .high_light_bg select {
             background-color: transparent;
         }
     </style>
+
 </head>
 
 <body>
@@ -79,7 +96,7 @@
                     </nav>
                 </div>
 
-                <div class="flex items-start w-full">
+                <div class="flex items-start w-full border">
                     <!-- side profile nav -->
                     <div class="w-[323px]  lg:block hidden  rounded-r-3xl bg-stone-50">
                         <div class="w-[307px] rounded-r-3xl bg-white">
@@ -163,7 +180,7 @@
                     </div>
 
 
-                    <div class="w-[33px] min-h-screen h-[900px] rounded-r-3xl bg-stone-50">
+                    <div class=" min-h-screen h-[900px] rounded-r-3xl bg-stone-50" style="width: 15px;">
                     </div>
                     <div class="px-4 py-3 w-full  ml-2">
                         <div class="w-full">
@@ -244,8 +261,7 @@
                                                 class="text-red-600">*</span></label>
                                         <div class="input_border_user my-2 high_light_bg">
 
-                                            <select name="" id=""
-                                                class="outline-none w-full py-1 text-gray-900 text-lg">
+                                            <select name="" id="" class="outline-none w-full text-gray-900 text-md">
                                                 <option value="1">Pre-Approved</option>
                                                 <option value="1">Approved</option>
                                                 <option value="1">Decline</option>
@@ -273,8 +289,7 @@
                                                 class="text-red-600">*</span></label>
                                         <div class="input_border_user my-2 high_light_bg">
 
-                                            <select name="" id=""
-                                                class="outline-none w-full py-1 text-gray-900 text-lg ">
+                                            <select name="" id="" class="outline-none w-full text-gray-900 text-md ">
                                                 <option value="1">Medical Expenses</option>
                                                 <option value="1">Approved</option>
                                                 <option value="1">Decline</option>
@@ -301,7 +316,7 @@
                                         <label for="" class="text-[17px]">Due Date<span
                                                 class="text-red-600">*</span></label>
                                         <div class="input_border_user my-2 high_light_bg">
-                                            <input type="date" name="" id="" value="15th Monthly" class="form_input">
+                                            <input type="" name="" id="" value="15th Monthly" class="form_input">
                                         </div>
                                     </div>
 
@@ -310,8 +325,7 @@
                                                 class="text-red-600">*</span></label>
                                         <div class="input_border_user my-2 high_light_bg">
 
-                                            <select name="" id=""
-                                                class="outline-none w-full py-1 text-gray-900 text-lg ">
+                                            <select name="" id="" class="outline-none w-full  text-gray-900 text-md ">
                                                 <option value="1">Unable to verify income</option>
                                                 <option value="1">Approved</option>
                                                 <option value="1">Decline</option>
@@ -382,7 +396,7 @@
                                         <div class="input_border_user my-2 high_light_bg">
 
                                             <select name="" id=""
-                                                class="outline-none w-full py-1 text-gray-900 text-lg ">
+                                                class="outline-none w-full text-gray-900 text-md appearance-none">
                                                 <option value="1">Checking</option>
                                                 <option value="1">Card</option>
                                             </select>
@@ -397,7 +411,8 @@
                                     </div>
                                     <div>
                                         <label for="" class="text-[17px]">Routing number <span
-                                                class="text-red-600">*</span></label>
+                                                class="text-red-600">*</span>
+                                        </label>
                                         <div class="input_border_user my-2 high_light_bg">
                                             <input type="text" name="" value="021000698" id="" class="form_input">
                                         </div>
@@ -416,6 +431,10 @@
     </main>
 
     <script>
+
+
+
+
         const model = document.getElementById('model');
         const show_model = document.getElementById('show_model');
         if (show_model)
@@ -451,7 +470,7 @@
             })
 
     </script>
-    <script src="../../js/script.js"> </script>
+    <script src="/js/script.js"> </script>
 </body>
 
 </html>

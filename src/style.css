@@ -1,0 +1,30 @@
+<style>
+.high_light_bg {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #E9EAEC;
+}
+
+.high_light_bg_white {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #E9EAEC;
+    border-radius: 8px;
+}
+
+input {
+    outline: none;
+}
+
+.high_light_bg input {
+    background-color: transparent;
+}
+
+/* .high_light_bg input:focus {
+    outline: none;
+} */
+
+.high_light_bg select {
+    background-color: transparent;
+}

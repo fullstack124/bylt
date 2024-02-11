@@ -10,7 +10,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
     <style>
         .custom-width {
             width: 70%;
@@ -21,25 +21,52 @@
                 width: 100%;
             }
         }
+
+        .high_light_bg {
+            background-color: rgba(0, 0, 0, 0.04);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #E9EAEC;
+        }
+
+        .high_light_bg_white {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #E9EAEC;
+            border-radius: 8px;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .high_light_bg input {
+            background-color: transparent;
+        }
+
+
+        .high_light_bg select {
+            background-color: transparent;
+        }
     </style>
 
 </head>
 
 <body>
     <main class="flex">
-        
-               <!-- sidebar_nav -->
-               <div id="sidebar_nav"></div>
+
+        <!-- sidebar_nav -->
+        <div id="sidebar_nav"></div>
         <div class="w-full md:ml-[250px] ml-0 bg-white">
             <div>
-                  <!-- header -->
+                <!-- header -->
                 <div id="header"></div>
 
-              
+
                 <div class="bg-white sm:items-center items-start sm:flex-row flex-col"
                     style="margin-top: 20px; margin-left: 20px;">
                     <div>
-                        <h1 class="text-[#000] text-[26px] font-bold leading-[28px]">Loan Estimate Calculator</h1>
+                        <h1 class="text-[#000] text-[20px] font-bold leading-[28px]">Loan Estimate Calculator</h1>
                     </div>
                 </div>
                 <div class="flex mx-auto sm:px-10 px-3 bg-white  items-center justify-center">
@@ -51,21 +78,21 @@
                                 <div class="grid md:grid-cols-3 sm:grid-cols-3 grid-cols-1 ">
                                     <div class="px-2">
                                         <label for="label_class">Loan Amount<span class="star">*</span> </label>
-                                        <div class="input_border_user">
+                                        <div class="high_light_bg_white mt-2">
                                             <input type="text" name="" id="" class="form_input">
                                         </div>
                                     </div>
 
                                     <div class="px-2">
                                         <label for="label_class">Loan Terms<span class="star">*</span> </label>
-                                        <div class="input_border_user">
+                                        <div class="high_light_bg_white  mt-2">
                                             <input type="text" name="" id="" class="form_input">
                                         </div>
                                     </div>
                                     <div class="px-2">
                                         <label for="label_class">Interest Rate<span class="star">*</span>
                                         </label>
-                                        <div class="input_border_user">
+                                        <div class="high_light_bg_white  mt-2">
                                             <input type="text" name="" id="" class="form_input">
                                         </div>
                                     </div>
@@ -129,14 +156,16 @@
                     </div>
                 </div>
 
-                 <!-- footer -->
-                 <div id="footer"></div>
-               
+                <br>
+                <br>
+                <!-- footer -->
+                <div id="footer"></div>
+
             </div>
         </div>
     </main>
 
-    <script src="../../js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

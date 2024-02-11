@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', async function () {
+    const inputElements = document.querySelectorAll('input');
+
+    inputElements.forEach(function (inputElement) {
+        inputElement.addEventListener("input", function (event) {
+            const parentDiv = event.target.parentNode; // Get the parent div of the input
+
+            // Check if the trimmed value of the input is an empty string
+            if (event.target.value.trim() === "") {
+                parentDiv.classList.remove("high_light_bg");
+                parentDiv.classList.add("high_light_bg_white");
+            } else {
+                parentDiv.classList.remove("high_light_bg_white");
+                parentDiv.classList.add("high_light_bg");
+            }
+        });
+    });
+    
 
     const sidebar_nav = await fetch('/src/components/sidebar.html');
     const footer = await fetch('/src/components/footer.html');

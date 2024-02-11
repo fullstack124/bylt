@@ -10,6 +10,32 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .high_light_bg {
+            background-color: rgba(0, 0, 0, 0.04);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #E9EAEC;
+        }
+
+        .high_light_bg_white {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #E9EAEC;
+            border-radius: 8px;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .high_light_bg input {
+            background-color: transparent;
+        }
+        .high_light_bg select {
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -22,8 +48,9 @@
                 <!-- header -->
                 <div id="header"></div>
 
+                <div class="h-[0.84px] bg-slate-200"></div>
                 <div class="bg-white container mx-auto px-5  ">
-                    <div class="flex items-center space-x-4 flex-wrap">
+                    <div class="flex items-center space-x-6 flex-wrap">
                         <div class=" ml-4">
                             <a href="my-profile.html" class="flex items-center space-x-2 py-5">
                                 <img src="/images/icons/ic_user.svg" alt="">
@@ -36,7 +63,7 @@
                                 <img src="/images/icons/ic_building.svg" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Company Information</h2>
                             </a>
-                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                            <!-- <div class="w-[210px] h-[3px] bg-blue-600"></div> -->
                         </div>
                         <div>
                             <a href="team-member.html" class="flex items-center space-x-2 py-5">
@@ -50,13 +77,13 @@
                                 <img src="/images/icons/ic_lock.svg" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Roles & Permission</h2>
                             </a>
-                            <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
+                            <!-- <div class="w-[185px] h-[3px] bg-blue-600"></div> -->
                         </div>
                         <div>
-                            <a href="security.html" class="flex items-center space-x-2 py-5">
+                            <div class="flex items-center space-x-2 py-5">
                                 <img src="/images/icons/ic_recycle_circle.svg" alt="">
                                 <h2 class="text-black text-base font-medium leading-normal">Security & Integration</h2>
-                            </a>
+                            </div>
                             <!-- <div class="w-[129px] h-[3px] bg-blue-600"></div> -->
                         </div>
 
@@ -82,9 +109,12 @@
                                     <span> Employee ID</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg_white" style="padding: 10px !important;">
+                                    <input type="text" name="" id="" class="form_input w-full">
+                                </div>
+
                             </div>
+
                             <div>
                                 <label for="" class="text-black
                                 text-[13px]
@@ -93,8 +123,9 @@
                                     <span> First Name</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg_white" style="padding: 10px !important;">
+                                    <input type="text" name="" id="" class="form_input w-full">
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="text-black
@@ -104,8 +135,9 @@
                                     <span> Last Name</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg_white" style="padding: 10px !important;">
+                                    <input type="text" name="" id="" class="form_input w-full">
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="text-black
@@ -115,8 +147,9 @@
                                     <span> Email Address</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg_white" style="padding: 10px !important;">
+                                    <input type="text" name="" id="" class="form_input w-full">
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="text-black
@@ -126,8 +159,9 @@
                                     <span> Phone Number</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg_white" style="padding: 10px !important;">
+                                    <input type="text" name="" id="" class="form_input w-full">
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="text-black
@@ -137,8 +171,11 @@
                                     <span> Role</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg" style="padding: 10px !important;">
+                                    <select name="" id="" class="outline-none w-full  text-gray-900 text-lg">
+                                        <option value="1">Underwriter</option>
+                                    </select>
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="text-black
@@ -148,8 +185,11 @@
                                     <span> Team</span>
                                     <span class="text-red-600">*</span>
                                 </label>
-                                <input type="text"
-                                    class="w-full rounded-lg border border-gray-200 outline-none py-2.5 px-2">
+                                <div class="high_light_bg" style="padding: 10px !important;">
+                                    <select name="" id="" class="outline-none w-full  text-gray-900 text-lg">
+                                        <option value="1">Finance</option>
+                                    </select>
+                                </div>
                             </div>
 
                         </div>
@@ -167,6 +207,9 @@
 
                 </div>
 
+                <br>
+                <br>
+                <br>
                 <!-- footer -->
                 <div id="footer"></div>
             </div>
