@@ -26,6 +26,7 @@
             border: 1px solid #E9EAEC;
         }
 
+
         .high_light_bg_white {
             background-color: white;
             padding: 15px;
@@ -462,12 +463,18 @@
                                         <span>Payment Method</span>
                                         <span class="text-red-600">*</span>
                                     </label>
-                                    <select name="" id="value_dropdown"
-                                        class="mt-3 w-full outline-none border border-gray-300 py-3 px-4 rounded-md">
-                                        <option value="debit-card">Credit or Debit Card</option>
-                                        <option value="bank-transfer">Bank Direct Deposit - Transfer </option>
-                                        <option value="dis">Disbursement </option>
-                                    </select>
+                                    <div
+                                        class="flex justify-center border border-gray-300 py-3 px-4 rounded-md mt-3 w-full">
+
+                                        <select name="" id="value_dropdown" class="w-full outline-none">
+                                            <option value="debit-card">Credit or Debit Card</option>
+                                            <option value="bank-transfer">Bank Direct Deposit - Transfer </option>
+                                            <option value="dis">Disbursement </option>
+
+                                        </select>
+                                        <!-- <img src="/images/icons/ic_dropdown.svg" /> -->
+                                    </div>
+
                                 </div>
                                 <div id="our_billing">
                                     <label for=""
@@ -485,7 +492,7 @@
                                         class="text-black-primary font-inter text-base font-normal leading-snug">
                                         Financial Institution</label>
                                     <div class=" mt-3  high_light_bg" style="padding: 10px !important;">
-                                        <select name="" id="" class="w-full">
+                                        <select name="" id="" class="w-full outline-none">
                                             <option value="">Bank of Nova</option>
                                             <option value="">Bank of Nova2 </option>
                                             <option value="">Bank of Nova3</option>
